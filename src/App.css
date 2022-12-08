@@ -1,0 +1,123 @@
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+}
+
+@font-face {
+  font-family: CenturyGothic;
+  src: url(./assets/font/CenturyGothic.ttf);
+}
+
+@font-face {
+  font-family: gothicb;
+  src: url(./assets/font/gothicb.ttf);
+}
+
+* {
+  font-family: CenturyGothic, "Roboto", "sans-serif";
+}
+
+#fullCard {
+  scale:0.8;
+  rotate: 0deg;
+  height: 50vh;
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(222, 222, 222);
+  border-radius: 30px;
+  box-shadow: 1vh 2vh 5vh rgb(105, 105, 105);
+}
+
+#video {
+  width: auto;
+  height: 50%;
+  margin-top: 10%;
+  outline: none;
+}
+
+#projetID {
+  font-size: 0.6vw;
+  color: rgb(128, 3, 3);
+  margin: 0;
+  margin-top: 5%;
+  font-family: gothicb, "Roboto", "sans-serif";
+  text-align: left;
+}
+
+#fullCard h4 {
+  font-size: 0.7vw;
+  color: rgb(50, 50, 50);
+  margin: 0;
+  margin-top: 8%;
+  font-family: gothicb, "Roboto", "sans-serif";
+  text-align: left;
+  padding-left: 10%;
+}
+#fullCard p {
+  font-size: 65%;
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+  line-height: normal;
+  height: 100%;
+}
+
+.links {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.fullcardImg {
+  margin: 3%;
+  width: 10%;
+  height: auto;
+}
+
+.allCards {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.titleBar {
+  width: 15vw;
+  height: 10vh;
+  background-color: rgb(235, 235, 235);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 1vh 2vh 5vh rgb(199, 199, 199);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleBar h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  margin-top: 1.5vh;
+}
+
+.titleBar p {
+  font-size: 1rem;
+  margin-top: 0;
+  color: rgb(128, 3, 3);
+  font-family: gothicb, "Roboto", "sans-serif";
+}
