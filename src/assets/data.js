@@ -34,7 +34,7 @@ const data = [
     gitHub:
       "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
     web: "https://fr.wikipedia.org/wiki/Art_urbain",
-    video: "../src/assets/videos/derniereHeure.mp4",
+    video: "../src/assets/videos/WindaStreet.mp4",
   },
   {
     id: 5,
