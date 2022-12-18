@@ -71,7 +71,7 @@ body {
 }
 
 #video {
-  clip-path: inset(1.3px 0px);
+  clip-path: inset(1.8px 0px);
   margin: auto;
   width: 85%;
   height: 50%;
@@ -115,6 +115,10 @@ body {
   margin-bottom: 5%;
 }
 
+.links img {
+  scale: 0.8;
+}
+
 .fullcardImg {
   margin: 3%;
   width: 10%;
@@ -151,7 +155,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5vh;
   margin: 0;
   margin-top: 1.5vh;
 }
@@ -186,12 +190,12 @@ body {
   text-decoration: none;
   color: rgb(50, 50, 50);
 }
-
+/* 
 .titleBar a:hover {
   text-decoration: none;
   color: rgb(134, 5, 5);
   scale: 1.1;
-}
+} */
 
 .titleBar a:active {
   text-decoration: none;
