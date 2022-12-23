@@ -72,7 +72,7 @@ body {
 }
 
 #video {
-  clip-path: inset(1.7px 0px);
+  clip-path: inset(1.8px 0px);
   margin: auto;
   width: 85%;
   height: 50%;
@@ -114,6 +114,10 @@ body {
   height: 100%;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.links img {
+  scale: 0.8;
 }
 
 .fullcardImg {
@@ -187,12 +191,12 @@ body {
   text-decoration: none;
   color: rgb(50, 50, 50);
 }
-
+/* 
 .titleBar a:hover {
   text-decoration: none;
   color: rgb(134, 5, 5);
   scale: 1.1;
-}
+} */
 
 .titleBar a:active {
   text-decoration: none;

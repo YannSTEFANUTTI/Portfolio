@@ -13,9 +13,36 @@ const TitleBar = () => {
         });
       };
 
-return (
+  const handleZoomIn = () => {
+    gsap.to(".nameTitle", {
+      scale: 1.1,
+      duration: 0.5,
+      rotation: 0,
+      x: 0,
+      zIndex: 0,
+      ease: "back",
+    });
+    gsap.to(".EachCard5", {
+      scale: 1.15,
+      duration: 0.5,
+      rotation: 0,
+      x: 70,
+      zIndex: 0,
+      ease: "back",
+    });
+  };
+  const handleZoomOut = () => {
+    gsap.to(".nameTitle", {
+      scale: 1,
+      duration: 1,
+      rotation: 0,
+      x: 0,
+      zIndex: 0,
+    });
+  };
+  return (
   <div className="titleBar">
-    <div className="logos">
+      <div className="logos">
       <img src="src/assets/img/GitHub.png" alt="Github" />
       <img src="src/assets/img/react.png" alt="React" />
       <img src="src/assets/img/JS.png" alt="JS" />
@@ -27,18 +54,20 @@ return (
       <img src="src/assets/img/ps.png" alt="PS" />
       <img src="src/assets/img/AI.png" alt="AI" />
       <img src="src/assets/img/AE.png" alt="AE" />
-    </div>
-    <a
+      </div>
+      <a className="nameTitle"
+        onMouseEnter={() => handleZoomIn()}
+        onMouseLeave={() => handleZoomOut()}
       onMouseEnter={() => handleZoomIn()}
       href="src/assets/img/YannStefanutti.pdf"
       target="_blank"
       rel="noreferrer"
-    >
+      >
       <h1>Yann Stefanutti</h1>
       <p>Développeur Full Stack</p>
-    </a>
+      </a>
   </div>
-);
+  );
 };
 
 export default TitleBar;
