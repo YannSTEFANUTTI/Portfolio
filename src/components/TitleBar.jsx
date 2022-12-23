@@ -1,30 +1,43 @@
 import React from "react";
-
+import gsap from "gsap";
 const TitleBar = () => {
+      const handleZoomIn = () => {
+        const TL = gsap.timeline();
+        TL.to(`.EachCard5`, {
+            x:50,
+          scale: 1.3,
+          duration: 0.5,
+          rotation: 0,
+          zIndex: 0,
+          ease: "back",
+        });
+      };
+
 return (
-    <div className="titleBar">
+  <div className="titleBar">
     <div className="logos">
-        <img src="src/assets/img/GitHub.png" alt="Github" />
-        <img src="src/assets/img/react.png" alt="React" />
-        <img src="src/assets/img/JS.png" alt="JS" />
-        <img src="src/assets/img/html.png" alt="html" />
-        <img src="src/assets/img/CSS.png" alt="css" />
-        <img src="src/assets/img/node.png" alt="node" />
-        <img src="src/assets/img/EX.png" alt="Express" />
-        <img src="src/assets/img/sql.png" alt="sql" />
-        <img src="src/assets/img/ps.png" alt="PS" />
-        <img src="src/assets/img/AI.png" alt="AI" />
-        <img src="src/assets/img/AE.png" alt="AE" />
+      <img src="src/assets/img/GitHub.png" alt="Github" />
+      <img src="src/assets/img/react.png" alt="React" />
+      <img src="src/assets/img/JS.png" alt="JS" />
+      <img src="src/assets/img/html.png" alt="html" />
+      <img src="src/assets/img/CSS.png" alt="css" />
+      <img src="src/assets/img/node.png" alt="node" />
+      <img src="src/assets/img/EX.png" alt="Express" />
+      <img src="src/assets/img/sql.png" alt="sql" />
+      <img src="src/assets/img/ps.png" alt="PS" />
+      <img src="src/assets/img/AI.png" alt="AI" />
+      <img src="src/assets/img/AE.png" alt="AE" />
     </div>
     <a
-        href="src/assets/img/YannStefanutti.pdf"
-        target="_blank"
-        rel="noreferrer"
+      onMouseEnter={() => handleZoomIn()}
+      href="src/assets/img/YannStefanutti.pdf"
+      target="_blank"
+      rel="noreferrer"
     >
-        <h1>Yann Stefanutti</h1>
-        <p>Développeur Full Stack</p>
+      <h1>Yann Stefanutti</h1>
+      <p>Développeur Full Stack</p>
     </a>
-    </div>
+  </div>
 );
 };
 
