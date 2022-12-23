@@ -40,7 +40,7 @@ const data = [
     id: 5,
     title: "Développeur Full Stack",
     date: "03/23",
-    txt: "Lorem ipsum dolorsit amet, consectetur adipisicing elit. Animiaspernatur, praesentium quasi magni magnam voluptatem nulla. Dolor nemoiure commodi voluptates labore fugiat 06.65.73.03.65",
+    txt: `Avec 20 années d'expérience dans l'audiovisuel et le service client, j'ai acquis une solide expertise et je suis passionné par mon métier. J'ai eu l'occasion de travailler sur de nombreux projets intéressants et de collaborer avec des clients de tous horizons. Si vous cherchez un blablabla expérimenté et professionnel, n'hésitez pas à me contacter. 06.65.73.03.65`,
     gitHub: "https://github.com/YannSTEFANUTTI",
     web: "https://www.linkedin.com/in/ystefanutti/",
     video: "../src/assets/videos/Ian.mp4",
