@@ -58,8 +58,9 @@ const TitleBar = () => {
   return (
     <div className="titleBar">
       <div className="logos">
-{dataTitle.map((el)=> <img src={el.src} alt={el.tag}/>)}
-      
+        {dataTitle.map((el) => (
+          <img className="eachLogo" src={el.src} alt={el.tag} />
+        ))}
       </div>
       <a
         className="nameTitle"

@@ -46,7 +46,19 @@ function App() {
         stagger: { each: 0.15 /* from:"center" */ },
       },
       "-=0.75"
-    );
+    )
+    .from(".eachLogo", {
+      opacity: 0,
+      x: 0,
+      y: 0,
+      scale: 0,
+      duration: 0.3,
+      delay: -0.1,
+      repeat: 0,
+      repeatDelay: 1,
+      ease: "back",
+      stagger: { each: 0.1, from: "center" },
+    });;
 
   return (
     <div className="App">
