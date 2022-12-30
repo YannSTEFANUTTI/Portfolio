@@ -5,42 +5,57 @@ import netLogo from "../assets/img/netLogo.png";
 
 const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
   const handleZoomIn = () => {
-    gsap.to(`.EachCard${id}`, {
-      scale: 1.35,
-      duration: 0.5,
-      rotation: 0,
-      x: -60,
-      zIndex: 1,
-      ease: "back",
-    });
-    gsap.to(`#links${id}`, {
-      scale: 1.2,
-      duration: 0.5,
-      rotation: 0,
-      delay: 0.3,
-      x: 0,
-      zIndex: 0,
-      ease: "back",
-    
-    });
+    const TL = gsap.timeline();
+    TL.fromTo(
+      `.EachCard${id}`,
+      {
+        zIndex: 0,
+      },
+      {
+        scale: 1.35,
+        duration: 0.4,
+        rotation: 0,
+        x: -60,
+        zIndex: 1,
+        zIndex: 1,
+        ease: "back",
+      }
+    ).fromTo(
+      `#links${id}`,
+      {
+        scale: 1,
+        duration: 0.5,
+        rotation: 0,
+        x: 0,
+        zIndex: 1,
+      },
+      {
+        scale: 1.2,
+        duration: 0.5,
+        rotation: 0,
+        delay: -0.3,
+        x: 0,
+        zIndex: 0,
+        ease: "back",
+      }
+    );
   };
   const handleZoomOut = () => {
-    gsap.to(`.EachCard${id}`, {
-      scale: 1,
-      duration: 1,
-      rotation: -5,
-      x: 0,
-      zIndex: 0,
-    });
-     gsap.to(`#links${id}`, {
-       scale: 0.8,
-       duration: 0.5,
-       rotation: 0,
-       delay: 0,
-       x: 0,
-       zIndex: 0,
-       ease: "back",
-            });
+    const TL = gsap.timeline();
+    TL.to(`.EachCard${id}`, {
+      keyframes: [
+        { x: 0, scale: 1, duration: 0.4, rotation: 0, zIndex: 0 },
+        { duration: 0.3, rotation: -5, delay: -0.15 },
+      ],
+    }).to(
+      `#links${id}`,
+      {
+        scale: 0.8,
+        duration: 0.5,
+        ease: "back",
+      },
+      "-=0.3"
+    );
   };
   return (
     <div
