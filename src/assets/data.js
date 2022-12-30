@@ -30,7 +30,8 @@ const data = [
     id: 4,
     title: "Street Art ludique",
     date: "02/23",
-    txt: "FULL STACK ! Découvrez toutes les oeuvres de Street-art de façon ludique à Bordeaux. Le troisième et dernier volet avec la Wild Code School est très prometteur : Une base de données solide, un design original, un jeu enrichissant, des amis à surpasser, une application complète ! Une équipe toujours Agil (scrum),  Node JS, mysql, React JS, Gsap... Livraison début 2023.",
+    txt: `FULL STACK ! Découvrez toutes les oeuvres de Street-art de façon ludique à Bordeaux.
+    Le troisième et dernier volet avec la Wild Code School est très prometteur : Une base de données solide, un design original, un jeu enrichissant, des amis à surpasser, une application complète ! Une équipe toujours Agil (scrum),  Node JS, mysql, React JS, Gsap... Livraison début 2023.`,
     gitHub:
       "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
     web: "https://fr.wikipedia.org/wiki/Art_urbain",
