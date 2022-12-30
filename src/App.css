@@ -40,7 +40,7 @@ body {
   height: 100vh;
   justify-content: center;
   background-image: url(./assets/img/desk01.png);
-  background-size: contain no-repeat;
+  background-size: cover;
 }
 
 @font-face {
@@ -61,11 +61,10 @@ body {
 #fullCard {
   margin-right: 1vw;
   rotate: 0deg;
-  height: 73%;
+  height: auto;
   width: 12vw;
   display: flex;
   flex-direction: column;
-  text-align: center;
   background-color: rgb(229, 229, 229);
   border-radius: 2vw;
   box-shadow: 1vh 2vh 5vh rgb(105, 105, 105);
@@ -133,12 +132,12 @@ body {
 }
 
 .allCards {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
-  justify-content: center;
 }
 
 /*-------------- TITLE BAR -------------- */
@@ -166,7 +165,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 130%;
+  font-size: 150%;
   margin: 0;
   margin-top: 1.5vh;
 }
@@ -197,7 +196,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.1vw;
+  gap: 0.5vw;
 }
 
 .titleBar a:link {
@@ -219,9 +218,24 @@ body {
   opacity: 1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+  body {
+    overflow-y: auto;
+    background-size: 600% 600%;
+  }
+
+  .App {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 150vh;
+    justify-content: center;
+    background-image: url(./assets/img/desk01.png);
+    background-size: cover;
+  }
   .titleBar {
-    top: 0;
+    top: 55px;
     width: 70vw;
     height: 10%;
     transform: translate(0, -20vh);
@@ -244,6 +258,8 @@ body {
     box-shadow: 1vh 2vh 5vh rgb(105, 105, 105);
     transform: translate(0px, 100vh);
     opacity: 0;
+    background-image: url(./assets/img/desk01.png);
+    background-size: cover;
   }
   .allCards {
     align-items: center;
@@ -283,14 +299,12 @@ body {
     padding-left: 0%;
     padding-right: 0%;
     text-align: left;
-    line-height: normal;
-    height: 100%;
   }
 
   .links {
     position: absolute;
     display: flex;
-    width: 100%;
+    width: 110%;
     height: 100%;
     align-items: flex-end;
     justify-content: center;

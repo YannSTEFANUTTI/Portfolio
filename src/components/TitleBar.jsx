@@ -12,34 +12,12 @@ const TitleBar = () => {
       x: 0,
       zIndex: 0,
       ease: "back",
-    })
-      .from(
-        ".nameAnim",
-        {
-          scale: 1,
-          duration: 1,
-          rotation: 0,
-          x: 10,
-          y: -40,
-          zIndex: 0,
-          opacity: 1,
-        },
-        "-=.5"
-      )
-      .to(
-        ".nameAnim",
-        {
-          opacity: 0,
-          duration: 0.8,
-          y: -40,
-        },
-        "-=1"
-      );
+    });
     gsap.to(".EachCard5", {
       scale: 1.15,
       duration: 0.5,
       rotation: 0,
-      x: 70,
+      x: 40,
       zIndex: 0,
       ease: "back",
     });

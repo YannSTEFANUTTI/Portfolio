@@ -31,7 +31,7 @@ const data = [
     title: "Street Art ludique",
     date: "02/23",
     txt: `FULL STACK ! Découvrez toutes les oeuvres de Street-art de façon ludique à Bordeaux.
-    Le troisième et dernier volet avec la Wild Code School est très prometteur : Une base de données solide, un design original, un jeu enrichissant, des amis à surpasser, une application complète ! Une équipe toujours Agil (scrum),  Node JS, mysql, React JS, Gsap... Livraison début 2023.`,
+    Le troisième et dernier volet avec la Wild Code School est très prometteur : Une base de données solide, un design original (retro-gaming), un jeu enrichissant, des amis à inviter et surpasser, une application complète ! Une équipe toujours très Agil (scrum), Node JS, mysql, Express, React JS, Gsap, Github... Livraison prévue au début février 2023.`,
     gitHub:
       "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
     web: "https://fr.wikipedia.org/wiki/Art_urbain",
@@ -41,7 +41,7 @@ const data = [
     id: 5,
     title: "Développeur Full Stack",
     date: "03/23",
-    txt: `Avec 20 années d'expérience dans l'audiovisuel et le service client, j'ai acquis une solide expertise et je suis passionné par mon métier. J'ai eu l'occasion de travailler sur de nombreux projets intéressants et de collaborer avec des clients de tous horizons. Si vous cherchez un blablabla expérimenté et professionnel, n'hésitez pas à me contacter. 06.65.73.03.65`,
+    txt: `Avec 20 années d'expérience dans l'audiovisuel et le service client, j'ai acquis une solide expertise par mes différents métiers. J'ai eu l'occasion de travailler sur de nombreux projets intéressants et de collaborer avec des clients de tous horizons. Je poursuis ma carrière dans le Web qui se rattache directement à mon passé et mes passions. Si vous cherchez un travailleur expérimenté, professionnel et passionné, n'hésitez pas à me contacter.`,
     gitHub: "https://github.com/YannSTEFANUTTI",
     web: "https://www.linkedin.com/in/ystefanutti/",
     video: "../src/assets/videos/Ian.mp4",

@@ -17,7 +17,6 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
         rotation: 0,
         x: -60,
         zIndex: 1,
-        zIndex: 1,
         ease: "back",
       }
     ).fromTo(
@@ -35,6 +34,7 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
         rotation: 0,
         delay: -0.3,
         x: 0,
+        y:10,
         zIndex: 0,
         ease: "back",
       }

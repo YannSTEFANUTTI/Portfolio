@@ -11,12 +11,10 @@ function App() {
   TL.to("#fullCard", {
     opacity: 1,
     x: 0,
-    y: 0,
+    y: 70,
     scale: 1,
     duration: 0.9,
     delay: 0.3,
-    repeat: 0,
-    repeatDelay: 1,
     ease: "back",
     stagger: { each: 0.15 /* from:"center" */ },
   })
