@@ -5,32 +5,64 @@ import gsap from "gsap";
 const TitleBar = () => {
   const handleZoomIn = () => {
     const TL = gsap.timeline();
-    TL.to(".nameTitle", {
-      scale: 1.1,
-      duration: 0.5,
-      rotation: 0,
-      x: 0,
-      zIndex: 0,
-      ease: "back",
+    let mm = gsap.matchMedia();
+    mm.add("(max-width: 1999px)", () => {
+      TL.to(".nameTitle", {
+        scale: 1.1,
+        duration: 0.5,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+        ease: "back",
+      });
+      gsap.to(".EachCard5", {
+        scale: 1.15,
+        duration: 0.5,
+        rotation: 0,
+        x: 40,
+        zIndex: 0,
+        ease: "back",
+      });
     });
-    gsap.to(".EachCard5", {
-      scale: 1.15,
-      duration: 0.5,
-      rotation: 0,
-      x: 40,
-      zIndex: 0,
-      ease: "back",
+    mm.add("(min-width: 2000px)", () => {
+      TL.to(".nameTitle", {
+        scale: 1.3,
+        duration: 0.5,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+        ease: "back",
+      });
+      gsap.to(".EachCard5", {
+        scale: 0.9,
+        duration: 0.5,
+        rotation: 0,
+        x: 40,
+        zIndex: 0,
+        ease: "back",
+      });
     });
   };
   const handleZoomOut = () => {
-    gsap.to(".nameTitle", {
-      scale: 1,
-      duration: 0.2,
-      rotation: 0,
-      x: 0,
-      zIndex: 0,
+    let mm = gsap.matchMedia();
+    mm.add("(max-width: 1999px)", () => {
+      gsap.to(".nameTitle", {
+        scale: 1,
+        duration: 0.2,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+      });
+    })
+    mm.add("(min-width: 2000px)", () => {
+      gsap.to(".nameTitle", {
+        scale: 1,
+        duration: 0.2,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+      });
     });
-    gsap.to(".nameAnim", { opacity: 0 });
   };
 
   return (

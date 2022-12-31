@@ -218,7 +218,7 @@ body {
   opacity: 1;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   body {
     overflow-y: auto;
     background-size: 600% 600%;
@@ -250,7 +250,7 @@ body {
     margin-right: 1vw;
     rotate: 0deg;
     height: auto;
-    width: 80vw;
+    width: 60vw;
     display: flex;
     flex-direction: row;
     background-color: rgb(229, 229, 229);
@@ -265,6 +265,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    gap:2vh
   }
   #video {
     clip-path: inset(1.8px 0px);
@@ -323,3 +324,4 @@ body {
     height: auto;
   }
 }
+
