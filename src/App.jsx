@@ -19,7 +19,7 @@ function App() {
       duration: 0.9,
       delay: 0.3,
       ease: "back",
-      stagger: { each: 0.15 /* from:"center" */ },
+      stagger: { each: 0.15},
     })
       .to(
         "#fullCard",
@@ -27,7 +27,7 @@ function App() {
           rotation: -5,
           duration: 0.9,
           ease: "back",
-          stagger: { each: 0.2 /* from:"center" */ },
+          stagger: { each: 0.2},
         },
         "-=0.2"
       )
@@ -44,7 +44,23 @@ function App() {
           repeat: 0,
           repeatDelay: 1,
           ease: "power4",
-          stagger: { each: 0.15 /* from:"center" */ },
+          stagger: { each: 0.15},
+        },
+        "-=0.75"
+      )
+      .from(
+        ".eachLogo",
+        {
+          opacity: 0,
+          x: 0,
+          y: 0,
+          scale: 0,
+          duration: 0.2,
+          delay: 0.5,
+          repeat: 0,
+          repeatDelay: 1,
+          ease: "back",
+          stagger: { each: 0.15, from: "center" },
         },
         "-=0.75"
       );
@@ -59,7 +75,7 @@ function App() {
       duration: 0.9,
       delay: 0.3,
       ease: "back",
-      stagger: { each: 0.15 /* from:"center" */ },
+      stagger: { each: 0.15},
     })
       .to(
         "#fullCard",
@@ -67,7 +83,7 @@ function App() {
           rotation: -5,
           duration: 0.9,
           ease: "back",
-          stagger: { each: 0.2 /* from:"center" */ },
+          stagger: { each: 0.2},
         },
         "-=0.2"
       )
@@ -84,7 +100,23 @@ function App() {
           repeat: 0,
           repeatDelay: 1,
           ease: "power4",
-          stagger: { each: 0.15 /* from:"center" */ },
+          stagger: { each: 0.15},
+        },
+        "-=0.75"
+      )
+      .from(
+        ".eachLogo",
+        {
+          opacity: 0,
+          x: 0,
+          y: 0,
+          scale: 0,
+          duration: 0.2,
+          delay: 0.5,
+          repeat: 0,
+          repeatDelay: 1,
+          ease: "back",
+          stagger: { each: 0.15, from: "center" },
         },
         "-=0.75"
       );
@@ -99,7 +131,7 @@ function App() {
       duration: 0.9,
       delay: 0.3,
       ease: "back",
-      stagger: { each: 0.15 /* from:"center" */ },
+      stagger: { each: 0.15},
     })
       .to(
         "#fullCard",
@@ -107,7 +139,7 @@ function App() {
           rotation: -5,
           duration: 0.9,
           ease: "back",
-          stagger: { each: 0.2 /* from:"center" */ },
+          stagger: { each: 0.2},
         },
         "-=0.2"
       )
@@ -123,7 +155,23 @@ function App() {
           repeat: 0,
           repeatDelay: 1,
           ease: "power4",
-          stagger: { each: 0.15 /* from:"center" */ },
+          stagger: { each: 0.15 },
+        },
+        "-=0.75"
+      )
+      .from(
+        ".eachLogo",
+        {
+          opacity: 0,
+          x: 0,
+          y: 0,
+          scale: 0,
+          duration: 0.2,
+          delay: 0.5,
+          repeat: 0,
+          repeatDelay: 1,
+          ease: "back",
+          stagger: { each: 0.15, from: "center" },
         },
         "-=0.75"
       );
