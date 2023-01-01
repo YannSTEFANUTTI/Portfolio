@@ -6,7 +6,25 @@ const TitleBar = () => {
   const handleZoomIn = () => {
     const TL = gsap.timeline();
     let mm = gsap.matchMedia();
-    mm.add("(max-width: 1999px)", () => {
+    mm.add("(max-width: 1200px)", () => {
+      TL.to(".nameTitle", {
+        scale: 1.1,
+        duration: 0.5,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+        ease: "back",
+      });
+      gsap.to(".EachCard5", {
+        scale: 1,
+        duration: 0,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+        ease: "back",
+      });
+    });
+    mm.add("(min-width:1201px) and (max-width: 1999px)", () => {
       TL.to(".nameTitle", {
         scale: 1.1,
         duration: 0.5,
@@ -53,7 +71,7 @@ const TitleBar = () => {
         x: 0,
         zIndex: 0,
       });
-    })
+    });
     mm.add("(min-width: 2000px)", () => {
       gsap.to(".nameTitle", {
         scale: 1,
@@ -82,7 +100,7 @@ const TitleBar = () => {
       >
         <h1>Yann Stefanutti</h1>
         <h1 className="nameAnim">Yann Stefanutti</h1>
-        <p>Développeur Full Stack</p>
+        <p>Développeur Full Stack {/* {<br />} 06 65 73 03 65 */}</p>
       </a>
     </div>
   );

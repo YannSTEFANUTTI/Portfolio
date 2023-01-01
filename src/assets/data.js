@@ -40,7 +40,7 @@ const data = [
   {
     id: 5,
     title: "Développeur Full Stack",
-    date: "03/23",
+    date: "06.65.73.03.65",
     txt: `Avec 20 années d'expérience dans l'audiovisuel et le service client, j'ai acquis une solide expertise par mes différents métiers. J'ai eu l'occasion de travailler sur de nombreux projets intéressants et de collaborer avec des clients de tous horizons. Je poursuis ma carrière dans le Web qui se rattache directement à mon passé et mes passions. Si vous cherchez un travailleur expérimenté, professionnel et passionné, n'hésitez pas à me contacter.`,
     gitHub: "https://github.com/YannSTEFANUTTI",
     web: "https://www.linkedin.com/in/ystefanutti/",

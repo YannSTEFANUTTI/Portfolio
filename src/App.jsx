@@ -8,57 +8,48 @@ window.addEventListener("load", App);
 
 function App() {
   const TL = gsap.timeline();
-  TL.to("#fullCard", {
-    opacity: 1,
-    x: 0,
-    y: 70,
-    scale: 1,
-    duration: 0.9,
-    delay: 0.3,
-    ease: "back",
-    stagger: { each: 0.15 /* from:"center" */ },
-  })
-    .to(
-      "#fullCard",
-      {
-        rotation: -5,
-        duration: 0.9,
-        ease: "back",
-        stagger: { each: 0.2 /* from:"center" */ },
-      },
-      "-=0.2"
-    )
-
-    .to(
-      ".titleBar",
-      {
-        opacity: 1,
-        x: 0,
-        y: 0,
-        scale: 1,
-        duration: 0.9,
-        delay: 0,
-        repeat: 0,
-        repeatDelay: 1,
-        ease: "power4",
-        stagger: { each: 0.15 /* from:"center" */ },
-      },
-      "-=0.75"
-    )
-    .from(".eachLogo", {
-      opacity: 0,
-      x: 0,
-      y: 0,
-      scale: 0,
-      duration: 0.3,
-      delay: -0.1,
-      repeat: 0,
-      repeatDelay: 1,
-      ease: "back",
-      stagger: { each: 0.1, from: "center" },
-    });
   let mm = gsap.matchMedia();
-  mm.add("(min-width: 2000px)", () => {
+  mm.add("(max-width: 1200px)", () => {
+    const TL = gsap.timeline();
+    TL.to("#fullCard", {
+      opacity: 1,
+      x: 0,
+      y: 1000,
+      scale: 1,
+      duration: 0.9,
+      delay: 0.3,
+      ease: "back",
+      stagger: { each: 0.15 /* from:"center" */ },
+    })
+      .to(
+        "#fullCard",
+        {
+          rotation: -5,
+          duration: 0.9,
+          ease: "back",
+          stagger: { each: 0.2 /* from:"center" */ },
+        },
+        "-=0.2"
+      )
+
+      .to(
+        ".titleBar",
+        {
+          opacity: 1,
+          x: 0,
+          y: 0,
+          scale: 1,
+          duration: 0.9,
+          delay: 0,
+          repeat: 0,
+          repeatDelay: 1,
+          ease: "power4",
+          stagger: { each: 0.15 /* from:"center" */ },
+        },
+        "-=0.75"
+      );
+  });
+  mm.add("(min-width:1201px) and (max-width: 1999px)", () => {
     const TL = gsap.timeline();
     TL.to("#fullCard", {
       opacity: 1,
@@ -96,7 +87,46 @@ function App() {
           stagger: { each: 0.15 /* from:"center" */ },
         },
         "-=0.75"
+      );
+  });
+  mm.add("(min-width: 2000px)", () => {
+    const TL = gsap.timeline();
+    TL.to("#fullCard", {
+      opacity: 1,
+      x: 0,
+      y: 70,
+      scale: 0.8,
+      duration: 0.9,
+      delay: 0.3,
+      ease: "back",
+      stagger: { each: 0.15 /* from:"center" */ },
+    })
+      .to(
+        "#fullCard",
+        {
+          rotation: -5,
+          duration: 0.9,
+          ease: "back",
+          stagger: { each: 0.2 /* from:"center" */ },
+        },
+        "-=0.2"
       )
+      .to(
+        ".titleBar",
+        {
+          opacity: 1,
+          x: 0,
+          y: 0,
+          scale: 1,
+          duration: 0.9,
+          delay: 0,
+          repeat: 0,
+          repeatDelay: 1,
+          ease: "power4",
+          stagger: { each: 0.15 /* from:"center" */ },
+        },
+        "-=0.75"
+      );
   });
 
   return (

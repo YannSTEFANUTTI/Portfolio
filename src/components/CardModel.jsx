@@ -21,25 +21,16 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
           zIndex: 1,
           ease: "back",
         }
-      ).fromTo(
+      ).to(
         `#links${id}`,
         {
           scale: 1,
+          opacity: 1,
           duration: 0.5,
           rotation: 0,
           x: 0,
           zIndex: 1,
         },
-        {
-          scale: 1.2,
-          duration: 0.5,
-          rotation: 0,
-          delay: -0.3,
-          x: 0,
-          y: 10,
-          zIndex: 0,
-          ease: "back",
-        }
       );
     });
     mm.add("(min-width:1201px) and (max-width: 1999px)", () => {
