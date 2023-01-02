@@ -1,7 +1,7 @@
 import React from "react";
 import Github from "../assets/img/Gitlogo.png";
-import gsap from "gsap";
 import netLogo from "../assets/img/netLogo.png";
+import gsap from "gsap";
 
 const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
   const handleZoomIn = () => {
