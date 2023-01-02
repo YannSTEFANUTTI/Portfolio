@@ -1,49 +1,97 @@
 import React from "react";
+import dataTitle from "../assets/dataTitle";
 import gsap from "gsap";
+
 const TitleBar = () => {
   const handleZoomIn = () => {
-    gsap.to(".nameTitle", {
-      scale: 1.1,
-      duration: 0.5,
-      rotation: 0,
-      x: 0,
-      zIndex: 0,
-      ease: "back",
+    const TL = gsap.timeline();
+    let mm = gsap.matchMedia();
+    mm.add("(max-width: 1200px)", () => {
+      TL.to(".nameTitle", {
+        scale: 1.1,
+        duration: 0.5,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+        ease: "back",
+      });
+      gsap.to(".EachCard5", {
+        scale: 1,
+        duration: 0,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+        ease: "back",
+      });
     });
-    gsap.to(".EachCard5", {
-      scale: 1.15,
-      duration: 0.5,
-      rotation: 0,
-      x: 70,
-      zIndex: 0,
-      ease: "back",
+    mm.add("(min-width:1201px) and (max-width: 1999px)", () => {
+      TL.to(".nameTitle", {
+        scale: 1.1,
+        duration: 0.5,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+        ease: "back",
+      });
+      gsap.to(".EachCard5", {
+        scale: 1.15,
+        duration: 0.5,
+        rotation: 0,
+        x: 40,
+        zIndex: 0,
+        ease: "back",
+      });
+    });
+    mm.add("(min-width: 2000px)", () => {
+      TL.to(".nameTitle", {
+        scale: 1.3,
+        duration: 0.5,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+        ease: "back",
+      });
+      gsap.to(".EachCard5", {
+        scale: 0.9,
+        duration: 0.5,
+        rotation: 0,
+        x: 40,
+        zIndex: 0,
+        ease: "back",
+      });
     });
   };
   const handleZoomOut = () => {
-    gsap.to(".nameTitle", {
-      scale: 1,
-      duration: 1,
-      rotation: 0,
-      x: 0,
-      zIndex: 0,
+    let mm = gsap.matchMedia();
+    mm.add("(max-width: 1999px)", () => {
+      gsap.to(".nameTitle", {
+        scale: 1,
+        duration: 0.2,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+      });
+    });
+    mm.add("(min-width: 2000px)", () => {
+      gsap.to(".nameTitle", {
+        scale: 1,
+        duration: 0.2,
+        rotation: 0,
+        x: 0,
+        zIndex: 0,
+      });
     });
   };
+
   return (
     <div className="titleBar">
       <div className="logos">
-        <img src="src/assets/img/GitHub.png" alt="Github" />
-        <img src="src/assets/img/react.png" alt="React" />
-        <img src="src/assets/img/JS.png" alt="JS" />
-        <img src="src/assets/img/html.png" alt="html" />
-        <img src="src/assets/img/CSS.png" alt="css" />
-        <img src="src/assets/img/node.png" alt="node" />
-        <img src="src/assets/img/EX.png" alt="Express" />
-        <img src="src/assets/img/sql.png" alt="sql" />
-        <img src="src/assets/img/ps.png" alt="PS" />
-        <img src="src/assets/img/AI.png" alt="AI" />
-        <img src="src/assets/img/AE.png" alt="AE" />
+        {dataTitle.map((el) => (
+          <img className="eachLogo" src={el.src} alt={el.tag} />
+        ))}
       </div>
-      <a className="nameTitle"
+      <a
+        className="nameTitle"
         onMouseEnter={() => handleZoomIn()}
         onMouseLeave={() => handleZoomOut()}
         href="src/assets/img/YannStefanutti.pdf"
@@ -51,7 +99,8 @@ const TitleBar = () => {
         rel="noreferrer"
       >
         <h1>Yann Stefanutti</h1>
-        <p>Développeur Full Stack</p>
+        <h1 className="nameAnim">Yann Stefanutti</h1>
+        <p>Développeur Full Stack {/* {<br />} 06 65 73 03 65 */}</p>
       </a>
     </div>
   );
