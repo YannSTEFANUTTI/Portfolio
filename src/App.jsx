@@ -9,7 +9,7 @@ window.addEventListener("load", App);
 function App() {
   const TL = gsap.timeline();
   let mm = gsap.matchMedia();
-  mm.add("(max-width: 1200px)", () => {
+/*   mm.add("(max-width: 1200px)", () => {
     const TL = gsap.timeline();
     TL.fromTo(
       "#fullCard",
@@ -34,7 +34,7 @@ function App() {
         stagger: { each: 0.15 },
       }
     )
-      /*       .to(
+      .to(
         "#fullCard",
         {
           rotation: -5,
@@ -43,7 +43,7 @@ function App() {
           stagger: { each: 0.2},
         },
         "-=0.2"
-      ) */
+      )
 
       .to(
         ".titleBar",
@@ -77,8 +77,8 @@ function App() {
         },
         "-=0.75"
       );
-  });
-  mm.add("(min-width:1201px) and (max-width: 1999px)", () => {
+  }); */
+  mm.add("(min-width:801px) and (max-width: 1999px)", () => {
     const TL = gsap.timeline();
     TL.to("#fullCard", {
       opacity: 1,
