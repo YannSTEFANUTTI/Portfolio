@@ -25,7 +25,7 @@ const data = [
   },
   {
     id: 3,
-    title: "Billeterie Spaciale",
+    title: "Billetterie Spatiale",
     date: "11/22",
     txt: "Fier d'avoir remporté en 24 heures ce premier Hackathon avec une équipe extraordinaire. Le thème était donné : Voyage. Une histoire originale était indispensable à notre victoire : Nous sommes en 2123, la terre se meurt, il vous reste une heure pour prendre un billet vers d'autres horizons. Une sélection de planètes (plus ou moins) formidables vous attend. Mais attention, plus le temps passe plus les prix flambent, dépêchez-vous de choisir !",
     gitHub: "https://github.com/YannSTEFANUTTI/Hackathon-DerniereHeure",
