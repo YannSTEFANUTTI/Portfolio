@@ -246,8 +246,10 @@ body {
     transform: translate(0, 0);
     box-shadow: none;
     margin: 0;
+    margin-bottom: 2vh;
     background-image: url(./assets/img/desk01.png);
     background-size: cover;
+
   }
   .titleBar img {
     width: 7%;
