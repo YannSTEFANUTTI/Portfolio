@@ -1,62 +1,76 @@
+import GitHub from "./img/GitHub.png";
+import AgileScrum from "./img/scrum.png";
+import React from "./img/react.png";
+import JS from "./img/JS.png";
+import html from "./img/html.png";
+import css from "./img/CSS.png";
+import node from "./img/node.png";
+import Express from "./img/EX.png";
+import sql from "./img/sql.png";
+import PS from "./img/ps.png";
+import AI from "./img/AI.png";
+import AE from "./img/AE.png";
+
+
 const dataTitle = [
   {
     id: 1,
-    src: "src/assets/img/GitHub.png",
+    src: GitHub,
     alt: "Github",
   },
   {
     id: 12,
-    src: "src/assets/img/scrum.png",
+    src: AgileScrum,
     alt: "AgileScrum",
   },
   {
     id: 2,
-    src: "src/assets/img/react.png",
+    src: React,
     alt: "React",
   },
   {
     id: 3,
-    src: "src/assets/img/JS.png",
+    src: JS,
     alt: "JS",
   },
   {
     id: 4,
-    src: "src/assets/img/html.png",
+    src: html,
     alt: "html",
   },
   {
     id: 5,
-    src: "src/assets/img/CSS.png",
+    src: css,
     alt: "css",
   },
   {
     id: 6,
-    src: "src/assets/img/node.png",
+    src: node,
     alt: "node",
   },
   {
     id: 7,
-    src: "src/assets/img/EX.png",
+    src: Express,
     alt: "Express",
   },
   {
     id: 8,
-    src: "src/assets/img/sql.png",
+    src: sql,
     alt: "sql",
   },
   {
     id: 9,
-    src: "src/assets/img/ps.png",
+    src: PS,
     alt: "PS",
   },
   {
     id: 10,
-    src: "src/assets/img/AI.png",
+    src: AI,
     alt: "AI",
   },
   {
     id: 11,
-    src: "src/assets/img/AE.png",
+    src: AE,
     alt: "AE",
   },
 ];

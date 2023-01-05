@@ -1,5 +1,6 @@
 import React from "react";
 import dataTitle from "../assets/dataTitle";
+import YannStefanutti from "../assets/img/YannStefanutti.pdf";
 import gsap from "gsap";
 
 const TitleBar = () => {
@@ -94,7 +95,7 @@ const TitleBar = () => {
         className="nameTitle"
         onMouseEnter={() => handleZoomIn()}
         onMouseLeave={() => handleZoomOut()}
-        href="src/assets/img/YannStefanutti.pdf"
+        href= {YannStefanutti}
         target="_blank"
         rel="noreferrer"
       >

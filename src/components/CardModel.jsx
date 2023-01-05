@@ -1,7 +1,7 @@
 import React from "react";
 import Github from "../assets/img/Gitlogo.png";
-import netLogo from "../assets/img/netLogo.png";
 import gsap from "gsap";
+import netlogo from "../assets/img/netlogo.png";
 
 const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
   const handleZoomIn = () => {
@@ -156,7 +156,7 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
           <img className="fullcardImg" src={Github} alt="Github" />
         </a>
         <a href={web} target="_blank" rel="noreferrer">
-          <img className="fullcardImg" src={netLogo} alt="web site" />
+          <img className="fullcardImg" src={netlogo} alt="web site" />
         </a>
       </div>
     </div>
