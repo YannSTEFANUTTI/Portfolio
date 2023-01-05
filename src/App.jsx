@@ -11,17 +11,30 @@ function App() {
   let mm = gsap.matchMedia();
   mm.add("(max-width: 1200px)", () => {
     const TL = gsap.timeline();
-    TL.to("#fullCard", {
-      opacity: 1,
-      x: 0,
-      y: 1000,
-      scale: 1,
-      duration: 0.9,
-      delay: 0.3,
-      ease: "back",
-      stagger: { each: 0.15},
-    })
-      .to(
+    TL.fromTo(
+      "#fullCard",
+      {
+        opacity: 1,
+        x: 0,
+        y: 2000,
+        scale: 1,
+        duration: 0.9,
+        delay: 0.3,
+        ease: "back",
+        stagger: { each: 0.15 },
+      },
+      {
+        opacity: 1,
+        x: 0,
+        y: 1000,
+        scale: 1,
+        duration: 0.9,
+        delay: 0.3,
+        ease: "back",
+        stagger: { each: 0.15 },
+      }
+    )
+      /*       .to(
         "#fullCard",
         {
           rotation: -5,
@@ -30,7 +43,7 @@ function App() {
           stagger: { each: 0.2},
         },
         "-=0.2"
-      )
+      ) */
 
       .to(
         ".titleBar",
@@ -44,7 +57,7 @@ function App() {
           repeat: 0,
           repeatDelay: 1,
           ease: "power4",
-          stagger: { each: 0.15},
+          stagger: { each: 0.15 },
         },
         "-=0.75"
       )
