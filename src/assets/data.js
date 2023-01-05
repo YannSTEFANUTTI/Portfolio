@@ -33,7 +33,7 @@ const data = [
     txt: `FULL STACK ! Découvrez toutes les oeuvres de Street-art de façon ludique à Bordeaux.
     Le troisième et dernier volet avec la Wild Code School est très prometteur : Une base de données solide, un design original (retro-gaming), un jeu enrichissant, des amis à inviter et surpasser, une application complète ! Une équipe toujours très Agil (scrum), Node JS, mysql, Express, React JS, Gsap, Github... Livraison prévue au début février 2023.`,
     gitHub:
-      "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
+      "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art/tree/dev",
     web: "https://fr.wikipedia.org/wiki/Art_urbain",
     video: "../src/assets/videos/WindaStreet.mp4",
   },
