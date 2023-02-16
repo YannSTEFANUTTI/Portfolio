@@ -101,7 +101,7 @@ const TitleBar = () => {
       >
         <h1>Yann Stefanutti</h1>
         <h1 className="nameAnim">Yann Stefanutti</h1>
-        <p>Développeur Full Stack {/* {<br />} 06 65 73 03 65 */}</p>
+        <p>Développeur React/Node {<br />} 06 65 73 03 65</p>
       </a>
     </div>
   );
