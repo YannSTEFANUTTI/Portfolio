@@ -2,9 +2,8 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  min-width: 100vw;
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -72,11 +71,11 @@ body {
 }
 
 #video {
-  clip-path: inset(1.8px 0px);
+  clip-path: inset(0.1vw 0px);
   margin: auto;
-  width: 85%;
-  height: 50%;
-  margin-top: 10%;
+  width: 10.2vw;
+  height: auto;
+  margin-top: 1vw;
   border-radius: 0.5vw;
 }
 
@@ -84,7 +83,7 @@ body {
   font-size: 0.6vw;
   color: rgb(128, 3, 3);
   margin: 0;
-  margin-top: 5%;
+  margin-top: 0.5vw;
   font-family: gothicb, "Roboto", "sans-serif";
   text-align: left;
   letter-spacing: -0.04rem;
@@ -94,26 +93,24 @@ body {
   font-size: 0.7vw;
   color: rgb(50, 50, 50);
   margin: 0;
-  margin-top: 8%;
+  margin-top: 1vw;
   font-family: gothicb, "Roboto", "sans-serif";
   text-align: left;
-  padding-left: 10%;
+  padding-left: 1vw;
 }
 #fullCard p {
   font-size: 0.55vw;
   margin: 0;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 1vw;
+  padding-right: 1vw;
   text-align: left;
   line-height: normal;
-  height: 100%;
+  height: 10vw;
 }
 
 .links {
   display: flex;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10%;
+  padding-bottom: 2vw;
   align-items: flex-end;
   justify-content: center;
   gap: 10%;
@@ -122,12 +119,6 @@ body {
 .links img {
   scale: 0.8;
   width: 1.5vw;
-}
-
-.fullcardImg {
-  margin: 3%;
-  width: 10%;
-  height: auto;
 }
 
 .allCards {
@@ -144,10 +135,10 @@ body {
 .titleBar {
   position: relative;
   width: 30vw;
-  height: 20%;
+  height: 20vh;
   background-color: rgb(235, 235, 235, 0.9);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
   box-shadow: 1vh 2vh 5vh rgb(141, 141, 141);
   display: flex;
   flex-direction: column;
@@ -155,7 +146,7 @@ body {
   justify-content: center;
   margin: 0;
   transform: translate(0, -20vh);
-  background-image: url(./assets/img/desk01.png);
+  background-image: url(./assets/img/desk03.png);
   background-size: cover;
 }
 
@@ -242,17 +233,16 @@ body {
   .titleBar {
     position: initial;
     width: 70vw;
-    height: 20vh;
+    height: 15vh;
     transform: translate(0, 0);
     box-shadow: none;
     margin: 0;
     margin-bottom: 2vh;
     background-image: url(./assets/img/desk01.png);
     background-size: cover;
-
   }
   .titleBar img {
-    width: 7%;
+    width: 4vw;
     margin-top: 1vh;
     filter: sepia(20%);
   }
@@ -260,14 +250,12 @@ body {
     position: initial;
     margin-right: 0vw;
     rotate: 0deg;
-    height: auto;
     width: 60vw;
-    display: flex;
-    flex-direction: column;
+    height: 90vh;
     background-color: rgba(229, 229, 229, 0.8);
     border-radius: 2vw;
     box-shadow: 1vh 2vh 5vh rgb(105, 105, 105);
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
     opacity: 1;
   }
 
@@ -276,67 +264,54 @@ body {
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 10vh;
   }
 
   #video {
-    clip-path: inset(1.8px 0px);
-    margin-left: 1%;
+    clip-path: inset(0.8vw 0);
+    margin-left: 0;
     width: auto;
-    height: 25vh;
-    margin: 2%;
+    height: 65vw;
+    margin: 2vw;
     border-radius: 0.5vw;
   }
 
   #projetID {
-    font-size: 100%;
+    font-size: 3vw;
     color: rgb(128, 3, 3);
     margin: 0;
-    margin-top: 2%;
+    margin-top: 1vw;
     text-align: left;
-    margin-left: -3%;
+    margin-left: 0vw;
     font-family: gothicb, "Roboto", "sans-serif";
     letter-spacing: -0.04rem;
   }
 
   #fullCard h4 {
-    font-size: 100%;
+    font-size: 3.5vw;
     color: rgb(50, 50, 50);
     margin: 0;
-    margin-top: 2%;
+    margin-top: 2vw;
     font-family: gothicb, "Roboto", "sans-serif";
     text-align: left;
-    padding-left: 2%;
+    padding-left: 5vw;
   }
 
   #fullCard p {
-    font-size: 80%;
-    margin: 2%;
-    padding-left: 0%;
-    padding-right: 0%;
-    text-align: left;
+    font-size: 3vw;
+    margin: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: 25vh;
   }
 
   .links {
-    position: initial;
-    display: flex;
-    width: 190%;
-    height: 70%;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 4%;
     opacity: 1;
   }
-
+  
   .links img {
     scale: 1;
     width: 5vw;
-    transform: translate(-10vw, 2vw);
-  }
-
-  .fullcardImg {
-    margin: 0%;
-    width: 20%;
-    height: auto;
+    padding-bottom: 2vh;
   }
 }

@@ -3,6 +3,7 @@ import WorldWildHeroes from "../assets/videos/WorldWildHeroes.mp4";
 import derniereHeure from "../assets/videos/derniereHeure.mp4";
 import WindaStreet from "../assets/videos/WindaStreet.mp4";
 import Ian from "../assets/videos/Ian.mp4";
+import Goop from "../assets/videos/goop.mp4";
 
 const data = [
   {
@@ -34,15 +35,26 @@ const data = [
   },
   {
     id: 4,
+    title: "Gestion de parcs automobiles",
+    date: "01/23",
+    txt: `Ce projet a été réalisé en 72 heures. Son thème était la gestion d'un parc automobiles. Nous avons pris l'initiative d'ajouter le partage de trajets pour les collectivités : consultation des trajets disponibles, sélection de véhicules, réservations, page administrateur, page technicien. React & Node JS, mysql, Express, Gsap, Tailwind... Une démo sera bientôt en ligne.`,
+    gitHub:
+      "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
+    web: "https://youtu.be/Fxnu3otAR0Q",
+    video: Goop,
+  },
+  {
+    id: 6,
     title: "Street Art ludique",
     date: "02/23",
     txt: `FULL STACK ! Découvrez toutes les oeuvres de Street-art de façon ludique à Bordeaux.
-    Le troisième et dernier volet avec la Wild Code School a fait l'unanimité : Une base de données solide, un design original (retro-gaming), un jeu enrichissant, des amis à inviter et surpasser, une application complète ! Une équipe toujours très Agil (scrum), Node JS, mysql, Express, React JS, Gsap... Une démo sera bientôt en ligne.`,
+    Le troisième et dernier volet avec la Wild Code School a fait l'unanimité : Une base de données solide, un design original (retro-gaming), un jeu enrichissant, des amis à inviter et surpasser, une application complète ! Une équipe toujours très Agil (scrum), Node JS, mysql, Express, React JS, Gsap... La démo est en ligne juste en dessous.`,
     gitHub:
       "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
     web: "https://youtu.be/Fxnu3otAR0Q",
     video: WindaStreet,
   },
+
   {
     id: 5,
     title: "Développeur Full Stack",

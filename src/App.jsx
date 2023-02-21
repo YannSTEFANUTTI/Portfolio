@@ -2,9 +2,16 @@ import "./App.css";
 import CardModel from "./components/CardModel";
 import data from "./assets/data";
 import TitleBar from "./components/TitleBar";
+import { useState } from "react";
 import gsap from "gsap";
 
 function App() {
+const [loading, setLoading] = useState(true);
+
+const handleLoad = () => {
+  setLoading(false);
+};
+
   setTimeout(() => {
     const TL = gsap.timeline();
     let mm = gsap.matchMedia();
@@ -91,21 +98,28 @@ function App() {
   }, 500);
 
   return (
-    <div className="App">
-      <TitleBar />
-      <div className="allCards">
-        {data &&
-          data.map((el) => (
-            <CardModel
-              id={el.id}
-              title={el.title}
-              date={el.date}
-              txt={el.txt}
-              gitHub={el.gitHub}
-              web={el.web}
-              video={el.video}
-            />
-          ))}
+    <div>
+      {loading && <div>Chargement en cours...</div>}
+      <div
+        className="App"
+        onLoad={handleLoad}
+        style={{ display: loading ? "none" : "flex" }}
+      >
+        <TitleBar />
+        <div className="allCards">
+          {data &&
+            data.map((el) => (
+              <CardModel
+                id={el.id}
+                title={el.title}
+                date={el.date}
+                txt={el.txt}
+                gitHub={el.gitHub}
+                web={el.web}
+                video={el.video}
+              />
+            ))}
+        </div>
       </div>
     </div>
   );
