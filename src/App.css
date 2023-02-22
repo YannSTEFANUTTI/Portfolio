@@ -1,10 +1,30 @@
+@font-face {
+  font-family: CenturyGothic;
+  src: url(./assets/font/CenturyGothic.ttf);
+}
+
+@font-face {
+  font-family: gothicb;
+  src: url(./assets/font/gothicb.ttf);
+}
+
+:root {
+  --fg: #17181c;
+  --shade1: #727274;
+  --shade2: #cccdd1;
+  --shade3: #f3f4f8;
+  --shade4: #ffffff;
+  --dur1: 1s;
+  --dur2: 6s;
+   font-family: CenturyGothic, "Roboto", "sans-serif";
+}
+
 body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  min-width: 100vw;
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -31,6 +51,15 @@ body {
   }
 }
 
+.background {
+  background-image: url(./assets/img/desk.jpg);
+  background-size: cover;
+  opacity: 0.4;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
 .App {
   align-items: center;
   display: flex;
@@ -38,18 +67,6 @@ body {
   width: 100vw;
   height: 100vh;
   justify-content: center;
-  background-image: url(./assets/img/desk01.png);
-  background-size: cover;
-}
-
-@font-face {
-  font-family: CenturyGothic;
-  src: url(./assets/font/CenturyGothic.ttf);
-}
-
-@font-face {
-  font-family: gothicb;
-  src: url(./assets/font/gothicb.ttf);
 }
 
 * {
@@ -65,26 +82,31 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgb(229, 229, 229);
-  border-radius: 2vw;
+  border-radius: 1vw;
   box-shadow: 1vh 2vh 5vh rgb(105, 105, 105);
   transform: translate(0px, 100vh);
   opacity: 0;
 }
 
 #video {
-  clip-path: inset(1.8px 0px);
+  clip-path: inset(0.1vw 0px);
   margin: auto;
-  width: 85%;
-  height: 50%;
-  margin-top: 10%;
-  border-radius: 0.5vw;
+  width: auto;
+  height: 13.2vw;
+  margin-top: 1vw;
+  border-radius: 0.4vw;
+  background-image: url(./assets/img/loading.gif);
+  background-size: 2vw;
+  background-repeat: no-repeat;
+  background-position: 20% 60%;
+  
 }
 
 #projetID {
   font-size: 0.6vw;
   color: rgb(128, 3, 3);
   margin: 0;
-  margin-top: 5%;
+  margin-top: 0.5vw;
   font-family: gothicb, "Roboto", "sans-serif";
   text-align: left;
   letter-spacing: -0.04rem;
@@ -94,26 +116,24 @@ body {
   font-size: 0.7vw;
   color: rgb(50, 50, 50);
   margin: 0;
-  margin-top: 8%;
+  margin-top: 1vw;
   font-family: gothicb, "Roboto", "sans-serif";
   text-align: left;
-  padding-left: 10%;
+  padding-left: 1vw;
 }
 #fullCard p {
   font-size: 0.55vw;
   margin: 0;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 1vw;
+  padding-right: 1vw;
   text-align: left;
   line-height: normal;
-  height: 100%;
+  height: 10vw;
 }
 
 .links {
   display: flex;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10%;
+  padding-bottom: 2vw;
   align-items: flex-end;
   justify-content: center;
   gap: 10%;
@@ -122,12 +142,6 @@ body {
 .links img {
   scale: 0.8;
   width: 1.5vw;
-}
-
-.fullcardImg {
-  margin: 3%;
-  width: 10%;
-  height: auto;
 }
 
 .allCards {
@@ -144,10 +158,10 @@ body {
 .titleBar {
   position: relative;
   width: 30vw;
-  height: 20%;
+  height: 20vh;
   background-color: rgb(235, 235, 235, 0.9);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
   box-shadow: 1vh 2vh 5vh rgb(141, 141, 141);
   display: flex;
   flex-direction: column;
@@ -155,7 +169,7 @@ body {
   justify-content: center;
   margin: 0;
   transform: translate(0, -20vh);
-  background-image: url(./assets/img/desk01.png);
+  background-image: url(./assets/img/desk_sm.png);
   background-size: cover;
 }
 
@@ -224,11 +238,16 @@ body {
     background-size: 800% 800%;
     z-index: 0;
     animation: none;
-    background-attachment: fixed;
-    background-image: url(./assets/img/desk03.png);
-    background-size: cover;
   }
-
+  .background {
+    background-attachment: fixed;
+    background-image: url(./assets/img/desk.jpg);
+    background-size: cover;
+    opacity: 0.4;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  }
   .App {
     align-items: center;
     display: flex;
@@ -242,17 +261,16 @@ body {
   .titleBar {
     position: initial;
     width: 70vw;
-    height: 20vh;
+    height: 15vh;
     transform: translate(0, 0);
     box-shadow: none;
     margin: 0;
     margin-bottom: 2vh;
-    background-image: url(./assets/img/desk01.png);
+    background-image: url(./assets/img/desk_sm.png);
     background-size: cover;
-
   }
   .titleBar img {
-    width: 7%;
+    width: 4vw;
     margin-top: 1vh;
     filter: sepia(20%);
   }
@@ -260,14 +278,12 @@ body {
     position: initial;
     margin-right: 0vw;
     rotate: 0deg;
-    height: auto;
     width: 60vw;
-    display: flex;
-    flex-direction: column;
+    height: 90vh;
     background-color: rgba(229, 229, 229, 0.8);
-    border-radius: 2vw;
+    border-radius: 5vw;
     box-shadow: 1vh 2vh 5vh rgb(105, 105, 105);
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
     opacity: 1;
   }
 
@@ -276,67 +292,56 @@ body {
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 10vh;
   }
 
   #video {
-    clip-path: inset(1.8px 0px);
-    margin-left: 1%;
+    clip-path: inset(0.8vw 0);
+    margin-left: 0;
     width: auto;
-    height: 25vh;
-    margin: 2%;
+    height: 65vw;
+    margin: 2vw;
     border-radius: 0.5vw;
+    background-position: center;
+    background-size: 10vw;
   }
 
   #projetID {
-    font-size: 100%;
+    font-size: 3vw;
     color: rgb(128, 3, 3);
     margin: 0;
-    margin-top: 2%;
+    margin-top: 1vw;
     text-align: left;
-    margin-left: -3%;
+    margin-left: 0vw;
     font-family: gothicb, "Roboto", "sans-serif";
     letter-spacing: -0.04rem;
   }
 
   #fullCard h4 {
-    font-size: 100%;
+    font-size: 3.5vw;
     color: rgb(50, 50, 50);
     margin: 0;
-    margin-top: 2%;
+    margin-top: 2vw;
     font-family: gothicb, "Roboto", "sans-serif";
     text-align: left;
-    padding-left: 2%;
+    padding-left: 5vw;
   }
 
   #fullCard p {
-    font-size: 80%;
-    margin: 2%;
-    padding-left: 0%;
-    padding-right: 0%;
-    text-align: left;
+    font-size: 3vw;
+    margin: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: auto;
   }
 
   .links {
-    position: initial;
-    display: flex;
-    width: 190%;
-    height: 70%;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 4%;
     opacity: 1;
   }
 
   .links img {
     scale: 1;
     width: 5vw;
-    transform: translate(-10vw, 2vw);
-  }
-
-  .fullcardImg {
-    margin: 0%;
-    width: 20%;
-    height: auto;
+    padding-bottom: 2vh;
   }
 }

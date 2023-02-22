@@ -1,10 +1,26 @@
 import "./App.css";
+import "./loader.css";
 import CardModel from "./components/CardModel";
 import data from "./assets/data";
 import TitleBar from "./components/TitleBar";
+import { useState, useEffect } from "react";
 import gsap from "gsap";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+useEffect(() => {
+ gsap.fromTo (".load", {opacity: 0} , {opacity: 1, duration: 2, delay: 0.2,}) 
+}, [])
+
+useEffect(() => {
+  gsap.to(".load", { opacity: 0, duration: 2,});
+}, [loading === false]);
+
+  const handleLoad = () => {
+    setLoading(false);
+  };
+
   setTimeout(() => {
     const TL = gsap.timeline();
     let mm = gsap.matchMedia();
@@ -91,21 +107,27 @@ function App() {
   }, 500);
 
   return (
-    <div className="App">
-      <TitleBar />
-      <div className="allCards">
-        {data &&
-          data.map((el) => (
-            <CardModel
-              id={el.id}
-              title={el.title}
-              date={el.date}
-              txt={el.txt}
-              gitHub={el.gitHub}
-              web={el.web}
-              video={el.video}
-            />
-          ))}
+    <div>
+      <div className="background"/>
+      <div
+        className="App"
+        onLoad={handleLoad}
+      >
+        <TitleBar />
+        <div className="allCards">
+          {data &&
+            data.map((el) => (
+              <CardModel
+                id={el.id}
+                title={el.title}
+                date={el.date}
+                txt={el.txt}
+                gitHub={el.gitHub}
+                web={el.web}
+                video={el.video}
+              />
+            ))}
+        </div>
       </div>
     </div>
   );

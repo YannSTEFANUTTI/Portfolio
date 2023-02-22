@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Github from "../assets/img/Gitlogo.png";
 import gsap from "gsap";
 import netlogo from "../assets/img/netlogo.png";
@@ -147,7 +147,13 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
       id="fullCard"
       className={`EachCard${id}`}
     >
-      <video id="video" src={video} autoPlay loop muted></video>
+      <video
+        id="video"
+        src={video}
+        autoPlay
+        loop
+        muted
+      ></video>
       <h5 id="projetID">&ensp;&ensp;&ensp; {`_________${date}`}</h5>
       <h4>{title}</h4>
       <p>{txt}</p>
