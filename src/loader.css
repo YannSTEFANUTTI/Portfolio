@@ -19,10 +19,10 @@
   color: var(--shade1);
   text-shadow: 0.1em 0.1em 0.1em var(--shade4);
   display: block;
-  -webkit-animation: fadeInFromNone 3s ease-out;
-  -moz-animation: fadeInFromNone 3s ease-out;
-  -o-animation: fadeInFromNone 3s ease-out;
-  animation: fadeInFromNone 3s ease-out;
+  -webkit-animation: fadeInFromNone 5s ease-out;
+  -moz-animation: fadeInFromNone 5s ease-out;
+  -o-animation: fadeInFromNone 5s ease-out;
+  animation: fadeInFromNone 5s ease-out;
 }
 
 .preloader__square {
@@ -64,7 +64,7 @@
         opacity: 0;
     }
 
-    1% {
+    50% {
         display: block;
         opacity: 0;
     }
@@ -81,7 +81,7 @@
         opacity: 0;
     }
 
-    1% {
+    50% {
         display: block;
         opacity: 0;
     }
@@ -98,7 +98,7 @@
         opacity: 0;
     }
 
-    1% {
+    50% {
         display: block;
         opacity: 0;
     }
@@ -115,7 +115,7 @@
         opacity: 0;
     }
 
-    1% {
+    50% {
         display: block;
         opacity: 0;
     }
