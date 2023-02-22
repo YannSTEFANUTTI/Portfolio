@@ -1,3 +1,13 @@
+:root {
+  --fg: #17181c;
+  --shade1: #727274;
+  --shade2: #cccdd1;
+  --shade3: #f3f4f8;
+  --shade4: #ffffff;
+  --dur1: 1s;
+  --dur2: 6s;
+}
+
 body {
   overflow: hidden;
   margin: 0;
@@ -30,6 +40,15 @@ body {
   }
 }
 
+.background {
+  background-image: url(./assets/img/desk.jpg);
+  background-size: cover;
+  opacity: 0.4;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
 .App {
   align-items: center;
   display: flex;
@@ -37,8 +56,6 @@ body {
   width: 100vw;
   height: 100vh;
   justify-content: center;
-  background-image: url(./assets/img/desk01.png);
-  background-size: cover;
 }
 
 @font-face {
@@ -64,7 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgb(229, 229, 229);
-  border-radius: 2vw;
+  border-radius: 1vw;
   box-shadow: 1vh 2vh 5vh rgb(105, 105, 105);
   transform: translate(0px, 100vh);
   opacity: 0;
@@ -73,10 +90,10 @@ body {
 #video {
   clip-path: inset(0.1vw 0px);
   margin: auto;
-  width: 10.2vw;
-  height: auto;
+  width: auto;
+  height: 13.2vw;
   margin-top: 1vw;
-  border-radius: 0.5vw;
+  border-radius: 0.4vw;
 }
 
 #projetID {
@@ -146,7 +163,7 @@ body {
   justify-content: center;
   margin: 0;
   transform: translate(0, -20vh);
-  background-image: url(./assets/img/desk03.png);
+  background-image: url(./assets/img/desk_sm.png);
   background-size: cover;
 }
 
@@ -215,11 +232,16 @@ body {
     background-size: 800% 800%;
     z-index: 0;
     animation: none;
-    background-attachment: fixed;
-    background-image: url(./assets/img/desk03.png);
-    background-size: cover;
   }
-
+  .background {
+    background-attachment: fixed;
+    background-image: url(./assets/img/desk.jpg);
+    background-size: cover;
+    opacity: 0.4;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  }
   .App {
     align-items: center;
     display: flex;
@@ -238,7 +260,7 @@ body {
     box-shadow: none;
     margin: 0;
     margin-bottom: 2vh;
-    background-image: url(./assets/img/desk03.png);
+    background-image: url(./assets/img/desk_sm.png);
     background-size: cover;
   }
   .titleBar img {
@@ -253,7 +275,7 @@ body {
     width: 60vw;
     height: 90vh;
     background-color: rgba(229, 229, 229, 0.8);
-    border-radius: 2vw;
+    border-radius: 5vw;
     box-shadow: 1vh 2vh 5vh rgb(105, 105, 105);
     transform: translate(0, 0);
     opacity: 1;
@@ -302,13 +324,13 @@ body {
     margin: 2vw;
     padding-left: 3vw;
     padding-right: 3vw;
-    height: 25vh;
+    height: auto;
   }
 
   .links {
     opacity: 1;
   }
-  
+
   .links img {
     scale: 1;
     width: 5vw;

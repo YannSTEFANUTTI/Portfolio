@@ -1,16 +1,25 @@
 import "./App.css";
+import "./loader.css";
 import CardModel from "./components/CardModel";
 import data from "./assets/data";
 import TitleBar from "./components/TitleBar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import gsap from "gsap";
 
 function App() {
-const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-const handleLoad = () => {
-  setLoading(false);
-};
+useEffect(() => {
+ gsap.fromTo (".load", {opacity: 0} , {opacity: 1, duration: 2, delay: 0.2,}) 
+}, [])
+
+useEffect(() => {
+  gsap.to(".load", { opacity: 0, duration: 2,});
+}, [loading === false]);
+
+  const handleLoad = () => {
+    setLoading(false);
+  };
 
   setTimeout(() => {
     const TL = gsap.timeline();
@@ -99,11 +108,10 @@ const handleLoad = () => {
 
   return (
     <div>
-      {loading && <div>Chargement en cours...</div>}
+      <div className="background"/>
       <div
         className="App"
         onLoad={handleLoad}
-        style={{ display: loading ? "none" : "flex" }}
       >
         <TitleBar />
         <div className="allCards">
