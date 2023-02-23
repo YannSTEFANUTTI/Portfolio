@@ -7,13 +7,15 @@ import Goop from "../assets/videos/goop.mp4";
 
 const data = [
   {
-    id: 1,
-    title: "Site Web de l'Artiste",
-    date: "09/22",
-    txt: "Mes premiers pas dans le monde du Web à travers ce site dédié à l'artiste The Weeknd. Au sein de la Wild Code School de Bordeaux, nous avons élaboré cette page dans l'idée de pouvoir (fictivement) découvrir l'actualité du chanteur : dates de tournée, billetterie, dernier album, clip, goodies et inscription à la newsletter. Vanilla JS, HTML et CSS sont de mise.",
-    gitHub: "https://github.com/YannSTEFANUTTI/theWeeknd-project",
-    web: "https://gregodges.github.io/theWeeknd-project/",
-    video: TheWeeknd,
+    id: 6,
+    title: "Street Art ludique",
+    date: "02/23",
+    txt: `FULL STACK ! Découvrez toutes les oeuvres de Street-art de façon ludique à Bordeaux.
+    Le troisième et dernier volet avec la Wild Code School a fait l'unanimité : Une base de données solide, un design original (retro-gaming), un jeu enrichissant, des amis à inviter et surpasser, une application complète ! Une équipe toujours très Agil (scrum), Node JS, mysql, Express, React JS, Gsap... La démo est en ligne juste en dessous.`,
+    gitHub:
+      "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
+    web: "https://youtu.be/Fxnu3otAR0Q",
+    video: WindaStreet,
   },
   {
     id: 2,
@@ -39,22 +41,20 @@ const data = [
     date: "01/23",
     txt: `Ce projet a été réalisé en 72 heures. Son thème était la gestion d'un parc automobiles. Nous avons pris l'initiative d'ajouter le partage de trajets pour les collectivités : consultation des trajets disponibles, sélection de véhicules, réservations, page administrateur, page technicien. React & Node JS, mysql, Express, Gsap, Tailwind... Une démo sera bientôt en ligne.`,
     gitHub:
-      "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
-    web: "https://youtu.be/Fxnu3otAR0Q",
+    "",
+    web: "",
     video: Goop,
   },
-  {
-    id: 6,
-    title: "Street Art ludique",
-    date: "02/23",
-    txt: `FULL STACK ! Découvrez toutes les oeuvres de Street-art de façon ludique à Bordeaux.
-    Le troisième et dernier volet avec la Wild Code School a fait l'unanimité : Une base de données solide, un design original (retro-gaming), un jeu enrichissant, des amis à inviter et surpasser, une application complète ! Une équipe toujours très Agil (scrum), Node JS, mysql, Express, React JS, Gsap... La démo est en ligne juste en dessous.`,
-    gitHub:
-      "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
-    web: "https://youtu.be/Fxnu3otAR0Q",
-    video: WindaStreet,
-  },
 
+  {
+    id: 1,
+    title: "Site Web de l'Artiste",
+    date: "09/22",
+    txt: "Mes premiers pas dans le monde du Web à travers ce site dédié à l'artiste The Weeknd. Au sein de la Wild Code School de Bordeaux, nous avons élaboré cette page dans l'idée de pouvoir (fictivement) découvrir l'actualité du chanteur : dates de tournée, billetterie, dernier album, clip, goodies et inscription à la newsletter. Vanilla JS, HTML et CSS sont de mise.",
+    gitHub: "https://github.com/YannSTEFANUTTI/theWeeknd-project",
+    web: "https://gregodges.github.io/theWeeknd-project/",
+    video: TheWeeknd,
+  },
   {
     id: 5,
     title: "Développeur Full Stack",
