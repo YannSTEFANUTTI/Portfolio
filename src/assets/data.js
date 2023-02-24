@@ -7,6 +7,15 @@ import Goop from "../assets/videos/goop.mp4";
 
 const data = [
   {
+    id: 5,
+    title: "Développeur Full Stack",
+    date: "06.65.73.03.65",
+    txt: `Avec 20 années d'expérience dans l'audiovisuel et le service client, j'ai acquis une solide expertise par mes différents métiers. J'ai eu l'occasion de travailler sur de nombreux projets intéressants et de collaborer avec des clients de tous horizons. Je poursuis ma carrière dans le Web qui se rattache directement à mon passé et mes passions. Si vous cherchez un travailleur expérimenté, professionnel et passionné, n'hésitez pas à me contacter.`,
+    gitHub: "https://github.com/YannSTEFANUTTI",
+    web: "https://www.linkedin.com/in/ystefanutti/",
+    video: Ian,
+  },
+  {
     id: 6,
     title: "Street Art ludique",
     date: "02/23",
@@ -39,10 +48,9 @@ const data = [
     id: 4,
     title: "Gestion de parcs automobiles",
     date: "01/23",
-    txt: `Ce projet a été réalisé en 72 heures. Son thème était la gestion d'un parc automobiles. Nous avons pris l'initiative d'ajouter le partage de trajets pour les collectivités : consultation des trajets disponibles, sélection de véhicules, réservations, page administrateur, page technicien. React & Node JS, mysql, Express, Gsap, Tailwind... Une démo sera bientôt en ligne.`,
-    gitHub:
-    "",
-    web: "",
+    txt: `Ce projet a été réalisé sur 72 heures. Son thème était la gestion d'un parc automobiles. Nous avons pris l'initiative d'ajouter le partage de trajets pour les collectivités : consultation des trajets disponibles, sélection de véhicules, réservations, page administrateur, page technicien. React & Node JS, mysql, Express, Gsap, Tailwind... Une démo sera bientôt en ligne.`,
+    gitHub: "https://github.com/YannSTEFANUTTI/GoOp/",
+    web: "https://youtu.be/8cSBJfSfOOI",
     video: Goop,
   },
 
@@ -55,15 +63,7 @@ const data = [
     web: "https://gregodges.github.io/theWeeknd-project/",
     video: TheWeeknd,
   },
-  {
-    id: 5,
-    title: "Développeur Full Stack",
-    date: "06.65.73.03.65",
-    txt: `Avec 20 années d'expérience dans l'audiovisuel et le service client, j'ai acquis une solide expertise par mes différents métiers. J'ai eu l'occasion de travailler sur de nombreux projets intéressants et de collaborer avec des clients de tous horizons. Je poursuis ma carrière dans le Web qui se rattache directement à mon passé et mes passions. Si vous cherchez un travailleur expérimenté, professionnel et passionné, n'hésitez pas à me contacter.`,
-    gitHub: "https://github.com/YannSTEFANUTTI",
-    web: "https://www.linkedin.com/in/ystefanutti/",
-    video: Ian,
-  },
+ 
 ];
 
 export default data;

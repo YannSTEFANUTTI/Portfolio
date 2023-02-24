@@ -16,15 +16,15 @@
   --shade4: #ffffff;
   --dur1: 1s;
   --dur2: 6s;
-   font-family: CenturyGothic, "Roboto", "sans-serif";
+  font-family: CenturyGothic, "Roboto", "sans-serif";
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100vw;
+  width: auto;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -58,6 +58,8 @@ body {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  position: fixed;
+  background-attachment: fixed;
 }
 
 .App {
@@ -74,6 +76,15 @@ body {
 }
 
 /*-------------- CARDS -------------- */
+.allCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60vw;
+  height: 80vh;
+}
 #fullCard {
   margin-right: 1vw;
   rotate: 0deg;
@@ -99,7 +110,6 @@ body {
   background-size: 2vw;
   background-repeat: no-repeat;
   background-position: 20% 60%;
-  
 }
 
 #projetID {
@@ -144,33 +154,23 @@ body {
   width: 1.5vw;
 }
 
-.allCards {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-}
-
 /*-------------- TITLE BAR -------------- */
 
 .titleBar {
-  position: relative;
-  width: 30vw;
-  height: 20vh;
-  background-color: rgb(235, 235, 235, 0.9);
-  border-bottom-left-radius: 2vw;
-  border-bottom-right-radius: 2vw;
-  box-shadow: 1vh 2vh 5vh rgb(141, 141, 141);
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  width: auto;
+  height: 15vh;
+  background-color: rgb(235, 235, 235, 0.8);
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  transform: translate(0, -20vh);
-  background-image: url(./assets/img/desk_sm.png);
   background-size: cover;
+  padding-inline: 4vw;
 }
 
 .titleBar h1 {
@@ -178,9 +178,9 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 150%;
+  font-size: 1.1vw;
   margin: 0;
-  margin-top: 1.5vh;
+  margin-top: 0.5vw;
 }
 
 .nameAnim {
@@ -192,17 +192,17 @@ body {
 }
 
 .titleBar p {
-  font-size: 100%;
+  font-size: 0.8vw;
   margin-top: 0;
-  color: rgb(128, 3, 3);
+  color: rgb(73, 114, 165);
   font-family: gothicb, "Roboto", "sans-serif";
   text-align: center;
 }
 
 .titleBar img {
-  width: 5%;
+  width: 1.3vw;
   margin-top: 1.5vh;
-  filter: sepia(20%);
+  filter: grayscale(40%);
 }
 
 .logos {
@@ -232,6 +232,7 @@ body {
 }
 
 /* // ----------------- MEDIA QUERIES -----------------// */
+
 @media screen and (max-width: 800px) {
   body {
     overflow-y: auto;
@@ -259,6 +260,7 @@ body {
   }
 
   .titleBar {
+    opacity: 1;
     position: initial;
     width: 70vw;
     height: 15vh;
@@ -266,18 +268,27 @@ body {
     box-shadow: none;
     margin: 0;
     margin-bottom: 2vh;
-    background-image: url(./assets/img/desk_sm.png);
     background-size: cover;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+  }
+  .titleBar h1 {
+    font-size: 100%;
+  }
+
+  .titleBar p {
+    font-size: 90%;
   }
   .titleBar img {
-    width: 4vw;
+    width: 3vw;
     margin-top: 1vh;
     filter: sepia(20%);
+    margin-bottom: 1vh;
   }
   #fullCard {
     position: initial;
     margin-right: 0vw;
-    rotate: 0deg;
+    rotate: -5deg;
     width: 60vw;
     height: 90vh;
     background-color: rgba(229, 229, 229, 0.8);
@@ -290,6 +301,8 @@ body {
   .allCards {
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+
     display: flex;
     flex-direction: column;
     gap: 10vh;
