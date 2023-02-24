@@ -38,8 +38,8 @@ const TitleBar = () => {
         scale: 1.15,
         duration: 0.5,
         rotation: 0,
-        x: 40,
-        zIndex: 0,
+        x: -150,
+        zIndex: 5,
         ease: "back",
       });
     });
@@ -101,7 +101,7 @@ const TitleBar = () => {
       >
         <h1>Yann Stefanutti</h1>
         <h1 className="nameAnim">Yann Stefanutti</h1>
-        <p>Développeur React/Node {<br />} 06 65 73 03 65</p>
+        <p>Développeur React Node JS {<br />} 06 65 73 03 65</p>
       </a>
     </div>
   );
