@@ -8,21 +8,21 @@ const Form = () => {
           name="contact"
           method="POST"
           data-netlify="true"
-          >
-            <h1>Contactez-moi</h1>
+        >
+          <h1>Contactez-moi</h1>
           <p>
             <label>
-              Nom: <input type="text" name="name" />
+              Nom <br /> <input type="text" name="name" />
             </label>
           </p>
           <p>
             <label>
-              Email: <input type="email" name="email" />
+              Email <br /> <input type="email" name="email" />
             </label>
           </p>
           <p>
             <label>
-              Message: <textarea name="message"></textarea>
+              Message <br /> <textarea name="message"></textarea>
             </label>
           </p>
           <p>
