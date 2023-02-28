@@ -1,0 +1,27 @@
+.formPage{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.formular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10vw;
+    width: 80vw;
+    height: auto;
+    background-color: rgba(245, 245, 245, 0.5);
+    padding: 2vw;
+}
+
+.formular h1{
+    font-size: 1.5vw;
+    margin-top: 0vh;
+}

@@ -24,11 +24,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: auto;
-  height: 100vh;
   display: flex;
   justify-content: center;
-  background-size: 300% 300%;
+  background-size: 300vw 300vw;
   background-image: linear-gradient(
     -45deg,
     rgb(206, 201, 145) 0%,
@@ -68,7 +66,7 @@ body {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  justify-content: center;
+  position: relative;
 }
 
 * {
@@ -83,8 +81,10 @@ body {
   align-items: flex-start;
   justify-content: center;
   width: 60vw;
-  height: 80vh;
+  height: auto;
+  z-index: 1;
 }
+
 #fullCard {
   margin-right: 1vw;
   rotate: 0deg;
@@ -159,7 +159,6 @@ body {
 .titleBar {
   top: 0;
   opacity: 0;
-  position: absolute;
   width: auto;
   height: 15vh;
   background-color: rgb(235, 235, 235, 0.8);
@@ -230,6 +229,7 @@ body {
 .eachLogo {
   opacity: 1;
 }
+
 
 /* // ----------------- MEDIA QUERIES -----------------// */
 
@@ -302,10 +302,11 @@ body {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
-
+    height: 80vh;
     display: flex;
     flex-direction: column;
     gap: 10vh;
+    position: initial;
   }
 
   #video {

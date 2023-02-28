@@ -10,7 +10,10 @@ const data = [
     id: 5,
     title: "Développeur Full Stack",
     date: "06.65.73.03.65",
-    txt: `Avec 20 années d'expérience dans l'audiovisuel et le service client, j'ai acquis une solide expertise par mes différents métiers. J'ai eu l'occasion de travailler sur de nombreux projets intéressants et de collaborer avec des clients de tous horizons. Je poursuis ma carrière dans le Web qui se rattache directement à mon passé et mes passions. Si vous cherchez un travailleur expérimenté, professionnel et passionné, n'hésitez pas à me contacter.`,
+    txt: `Fort de dix années dans l'Audiovisuel durant lesquelles j'ai régulièrement
+collaboré sur des projets web, j'ai l'ambition de poursuivre ma carrière
+en tant que développeur. Mon esprit d'équipe et ma rigueur constituent des atouts majeurs pour
+mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un travailleur expérimenté, professionnel et passionné, n'hésitez pas à me contacter.`,
     gitHub: "https://github.com/YannSTEFANUTTI",
     web: "https://www.linkedin.com/in/ystefanutti/",
     video: Ian,
@@ -63,8 +66,6 @@ const data = [
     web: "https://gregodges.github.io/theWeeknd-project/",
     video: TheWeeknd,
   },
- 
 ];
 
 export default data;
-

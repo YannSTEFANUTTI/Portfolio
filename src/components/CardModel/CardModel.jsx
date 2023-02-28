@@ -1,7 +1,6 @@
-import { useState } from "react";
-import Github from "../assets/img/Gitlogo.png";
+import Github from "../../assets/img/Gitlogo.png";
 import gsap from "gsap";
-import netlogo from "../assets/img/netlogo.png";
+import netlogo from "../../assets/img/netlogo.png";
 
 const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
   const handleZoomIn = () => {
@@ -161,9 +160,9 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
         <a href={gitHub} target="_blank" rel="noreferrer">
           <img className="fullcardImg" src={Github} alt="Github" />
         </a>
-        <a href={web} target="_blank" rel="noreferrer">
+       { web && <a href={web} target="_blank" rel="noreferrer">
           <img className="fullcardImg" src={netlogo} alt="web site" />
-        </a>
+        </a>}
       </div>
     </div>
   );

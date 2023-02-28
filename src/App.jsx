@@ -1,21 +1,25 @@
 import "./App.css";
 import "./loader.css";
-import CardModel from "./components/CardModel";
-import data from "./assets/data";
-import TitleBar from "./components/TitleBar";
+import Form from "./components/Form/Form";
+import TitleBar from "./components/TitleBar/TitleBar";
+import AllCards from "./components/AllCards/AllCards";
 import { useState, useEffect } from "react";
 import gsap from "gsap";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
-useEffect(() => {
- gsap.fromTo (".load", {opacity: 0} , {opacity: 1, duration: 2, delay: 0.2,}) 
-}, [])
+  useEffect(() => {
+    gsap.fromTo(
+      ".load",
+      { opacity: 0 },
+      { opacity: 1, duration: 2, delay: 0.2 }
+    );
+  }, []);
 
-useEffect(() => {
-  gsap.to(".load", { opacity: 0, duration: 2,});
-}, [loading === false]);
+  useEffect(() => {
+    gsap.to(".load", { opacity: 0, duration: 2 });
+  }, [loading === false]);
 
   const handleLoad = () => {
     setLoading(false);
@@ -52,9 +56,6 @@ useEffect(() => {
           ".titleBar",
           {
             opacity: 1,
-            x: 0,
-            y: 0,
-            scale: 1,
             duration: 3,
             delay: 0,
             ease: "power4",
@@ -88,9 +89,6 @@ useEffect(() => {
           ".titleBar",
           {
             opacity: 1,
-            x: 0,
-            y: 0,
-            scale: 1,
             duration: 3,
             delay: 0,
             ease: "power4",
@@ -103,26 +101,13 @@ useEffect(() => {
 
   return (
     <div>
-      <div className="background"/>
-      <div
-        className="App"
-        onLoad={handleLoad}
-      >
-        <TitleBar />
-        <div className="allCards">
-          {data &&
-            data.map((el) => (
-              <CardModel
-                id={el.id}
-                title={el.title}
-                date={el.date}
-                txt={el.txt}
-                gitHub={el.gitHub}
-                web={el.web}
-                video={el.video}
-              />
-            ))}
+      <div>
+        <div className="background" />
+        <div className="App" onLoad={handleLoad}>
+          <TitleBar />
+          <AllCards />
         </div>
+          <Form />
       </div>
     </div>
   );
