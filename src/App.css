@@ -239,7 +239,7 @@ body {
     background-attachment: fixed;
     z-index: 0;
     animation: AnimateBG 500s ease infinite;
-    height: 100vh;
+    height: 150vh;
   }
 
   @keyframes AnimateBG {
