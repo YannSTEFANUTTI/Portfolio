@@ -233,13 +233,12 @@ body {
 @media screen and (max-width: 800px) {
   body {
     overflow-y: auto;
-    background-image: url(./assets/img/desk.jpg);
+    background-image: url(./assets/img/desk_mobile.jpg);
     background-size: cover;
     background-position: fixed;
     background-attachment: fixed;
     z-index: 0;
     animation: AnimateBG 500s ease infinite;
-    height: 150vh;
   }
 
   @keyframes AnimateBG {
