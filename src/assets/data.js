@@ -9,7 +9,7 @@ import Chaban from "../assets/videos/Chaban.mp4";
 const data = [
   {
     id: 5,
-    title: "Développeur Full Stack",
+    title: "DEVELOPPEUR WEB FULL STACK",
     date: "06.65.73.03.65",
     txt: `Fort de dix années dans l'Audiovisuel durant lesquelles j'ai régulièrement
 collaboré sur des projets web, j'ai l'ambition de poursuivre ma carrière
