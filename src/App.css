@@ -238,7 +238,7 @@ body {
   }
   .background {
     background-attachment: fixed;
-    background-image: url(./assets/img/desk.jpg);
+    background-image: none;
     background-size: cover;
     opacity: 0.4;
     width: 100vw;
