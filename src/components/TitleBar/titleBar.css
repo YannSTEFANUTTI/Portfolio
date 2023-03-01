@@ -1,0 +1,30 @@
+@media screen and (max-width: 800px) {
+ 
+  .titleBar {
+    opacity: 1;
+    position: initial;
+    width: 70vw;
+    height: 15vh;
+    transform: translate(0, 0);
+    box-shadow: none;
+    margin: 0;
+    margin-bottom: 2vh;
+    background-size: cover;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+  }
+  .titleBar h1 {
+    font-size: 100%;
+  }
+
+  .titleBar p {
+    font-size: 90%;
+  }
+  .titleBar img {
+    width: 3vw;
+    margin-top: 1vh;
+    filter: sepia(20%);
+    margin-bottom: 1vh;
+  }
+ 
+}

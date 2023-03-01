@@ -1,39 +1,38 @@
-import { useState } from "react";
-import Github from "../assets/img/Gitlogo.png";
+import { useState, useEffect, useRef } from "react";
+import Github from "../../assets/img/Gitlogo.png";
+import netlogo from "../../assets/img/netlogo.png";
 import gsap from "gsap";
-import netlogo from "../assets/img/netlogo.png";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
-  const handleZoomIn = () => {
-    let mm = gsap.matchMedia();
-    const TL = gsap.timeline();
-    mm.add("(max-width: 1200px)", () => {
-      TL.fromTo(
-        `.EachCard${id}`,
-        {
-          zIndex: 0,
-        },
-        {
-          scale: 1.35,
-          duration: 0.4,
-          rotation: 0,
-          x: 0,
-          zIndex: 1,
-          ease: "back",
-        }
-      ).to(
-        `#links${id}`,
-        {
-          scale: 1,
-          opacity: 1,
-          duration: 0.5,
-          rotation: 0,
-          x: 0,
-          zIndex: 1,
-        },
-      );
+
+  let mm = gsap.matchMedia();
+  const TL = gsap.timeline();
+
+  //-----------------   SCROLLTRIGGER ON MOBILE   -------------------//
+  mm.add("(max-width: 800px)", () => {
+    gsap.to(`.EachCard${id}`, {
+      rotate: 0,
+      scale: 1.2,
+      ease: "back",
+      scrollTrigger: {
+        trigger: `.EachCard${id}`,
+        start: "top 50%",
+        end: "+=100%",
+        scrub: true,
+        pinType: "fixed",
+      },
     });
-    mm.add("(min-width:1201px) and (max-width: 1999px)", () => {
+  });
+
+
+  //-----------------   DESKTOP ZOOM   -------------------//
+  const handleZoomIn = () => {
+    mm.add("(max-width: 1200px)", () => {});
+    mm.add("(min-width:800px) and (max-width: 1999px)", () => {
       TL.fromTo(
         `.EachCard${id}`,
         {
@@ -107,7 +106,7 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
   const handleZoomOut = () => {
     let mm = gsap.matchMedia();
     const TL = gsap.timeline();
-    mm.add("(max-width: 1999px)", () => {
+    mm.add("(min-width:800px) and (max-width: 1999px)", () => {
       TL.to(`.EachCard${id}`, {
         keyframes: [
           { x: 0, scale: 1, duration: 0.4, rotation: 0, zIndex: 0 },
@@ -140,6 +139,8 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
       );
     });
   };
+
+
   return (
     <div
       onMouseEnter={() => handleZoomIn()}
@@ -147,13 +148,7 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
       id="fullCard"
       className={`EachCard${id}`}
     >
-      <video
-        id="video"
-        src={video}
-        autoPlay
-        loop
-        muted
-      ></video>
+      <video id="video" src={video} autoPlay loop muted></video>
       <h5 id="projetID">&ensp;&ensp;&ensp; {`_________${date}`}</h5>
       <h4>{title}</h4>
       <p>{txt}</p>
@@ -161,9 +156,11 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
         <a href={gitHub} target="_blank" rel="noreferrer">
           <img className="fullcardImg" src={Github} alt="Github" />
         </a>
-        <a href={web} target="_blank" rel="noreferrer">
-          <img className="fullcardImg" src={netlogo} alt="web site" />
-        </a>
+        {web && (
+          <a href={web} target="_blank" rel="noreferrer">
+            <img className="fullcardImg" src={netlogo} alt="web site" />
+          </a>
+        )}
       </div>
     </div>
   );
