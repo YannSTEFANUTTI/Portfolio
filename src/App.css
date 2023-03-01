@@ -233,9 +233,25 @@ body {
 @media screen and (max-width: 800px) {
   body {
     overflow-y: auto;
-    background-size: 100vw 1500vh;
+    background-image: url(./assets/img/desk.jpg);
+        background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
     z-index: 0;
+     animation: AnimateBG 40s ease infinite;
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
   .background {
   display: none;}
 
@@ -246,10 +262,7 @@ body {
     width: 100vw;
     height: auto;
     justify-content: center;
-    background-image: url(./assets/img/desk_sm.png);
-    background-size: cover;
-    background-position: fixed;
-    background-attachment: fixed;
+
 
   }
 
