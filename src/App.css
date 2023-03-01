@@ -73,6 +73,26 @@ body {
   font-family: CenturyGothic, "Roboto", "sans-serif";
 }
 
+.dontTouch{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.13);
+  opacity: 1;
+  position: fixed;
+}
+
+.dontTouch img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5vw;
+  filter: sepia(100%);
+  opacity: 0.6;
+}
+
 /*-------------- CARDS -------------- */
 .allCards {
   display: flex;

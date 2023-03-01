@@ -75,7 +75,20 @@ function App() {
             ease: "back",
           },
           "-=2.8"
-        );
+        )
+        .to(
+          ".dontTouch",
+          {
+           opacity: 0,
+           duration: 0.5,
+          }, "<"
+        )
+        .to(
+          ".dontTouch",
+          {
+           display: "none",
+          }, "<"
+        )
     });
     mm.add("(min-width: 2000px)", () => {
       const TL = gsap.timeline();
@@ -109,6 +122,33 @@ function App() {
             stagger: { each: 0.15 },
           },
           "-=0.75"
+        )
+        .to(
+          ".EachCard5",
+          {
+            scale: 1,
+            duration: 1,
+            rotation: 0,
+            x: -150,
+            zIndex: 5,
+            ease: "back",
+          },
+          "-=2.8"
+        )
+        .to(
+          ".dontTouch",
+          {
+            opacity: 0,
+            duration: 0.5,
+          },
+          "<"
+        )
+        .to(
+          ".dontTouch",
+          {
+            display: "none",
+          },
+          "<"
         );
     });
   }, 500);
@@ -118,6 +158,7 @@ function App() {
       <div>
         <div className="background" />
         <div className="App" onLoad={handleLoad}>
+          <div className="dontTouch"> <img src="/src/assets/img/loading.gif" alt="loading" /></div>
           <TitleBar />
           <AllCards />
         </div>

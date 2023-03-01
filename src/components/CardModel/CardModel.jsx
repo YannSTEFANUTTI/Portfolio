@@ -9,8 +9,6 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
 
-  const [dontMove, setDontMove] = useState(true);
-
   let mm = gsap.matchMedia();
   const TL = gsap.timeline();
 
