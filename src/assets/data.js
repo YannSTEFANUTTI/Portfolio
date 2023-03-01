@@ -28,6 +28,7 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
       "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
     web: "https://youtu.be/Fxnu3otAR0Q",
     video: WindaStreet,
+    class: "toAnimate",
   },
   {
     id: 2,
@@ -37,6 +38,7 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
     gitHub: "https://github.com/YannSTEFANUTTI/WorldWildHero",
     web: "https://projet2-q67dmyvlt-alexandrepre.vercel.app/",
     video: WorldWildHeroes,
+    class: "toAnimate",
   },
   {
     id: 3,
@@ -46,6 +48,7 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
     gitHub: "https://github.com/YannSTEFANUTTI/Hackathon-DerniereHeure",
     web: "https://hackaton-sage.vercel.app/",
     video: derniereHeure,
+    class: "toAnimate",
   },
   {
     id: 4,
@@ -55,6 +58,7 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
     gitHub: "https://github.com/YannSTEFANUTTI/GoOp/",
     web: "https://youtu.be/8cSBJfSfOOI",
     video: Goop,
+    class: "toAnimate",
   },
 
   {
@@ -65,6 +69,7 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
     gitHub: "https://github.com/YannSTEFANUTTI/theWeeknd-project",
     web: "https://gregodges.github.io/theWeeknd-project/",
     video: TheWeeknd,
+    class: "toAnimate",
   },
 ];
 

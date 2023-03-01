@@ -7,25 +7,8 @@ const TitleBar = () => {
   const handleZoomIn = () => {
     const TL = gsap.timeline();
     let mm = gsap.matchMedia();
-    mm.add("(max-width: 1200px)", () => {
-      TL.to(".nameTitle", {
-        scale: 1.1,
-        duration: 0.5,
-        rotation: 0,
-        x: 0,
-        zIndex: 0,
-        ease: "back",
-      });
-      gsap.to(".EachCard5", {
-        scale: 1,
-        duration: 0,
-        rotation: 0,
-        x: 0,
-        zIndex: 0,
-        ease: "back",
-      });
-    });
-    mm.add("(min-width:1201px) and (max-width: 1999px)", () => {
+  
+    mm.add("(min-width:801px) and (max-width: 1999px)", () => {
       TL.to(".nameTitle", {
         scale: 1.1,
         duration: 0.5,

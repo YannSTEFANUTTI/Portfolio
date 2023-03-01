@@ -228,7 +228,6 @@ body {
   opacity: 1;
 }
 
-
 /* // ----------------- MEDIA QUERIES -----------------// */
 
 @media screen and (max-width: 800px) {
@@ -256,30 +255,19 @@ body {
     justify-content: center;
   }
 
-  .titleBar {
-    opacity: 1;
-    width: 70vw;
-    height: 15vh;
-    box-shadow: none;
-    margin: 0;
-    margin-bottom: 2vh;
-    background-size: cover;
-    border-bottom-left-radius: 3vw;
-    border-bottom-right-radius: 3vw;
-  }
-  .titleBar h1 {
-    font-size: 100%;
+  /*-------------- CARDS MEDIA QUERIES -------------- */
+
+  .allCards {
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+    margin-top: 10vh;
   }
 
-  .titleBar p {
-    font-size: 90%;
-  }
-  .titleBar img {
-    width: 3vw;
-    margin-top: 1vh;
-    filter: sepia(20%);
-    margin-bottom: 1vh;
-  }
   #fullCard {
     position: initial;
     margin-right: 0vw;
@@ -291,16 +279,6 @@ body {
     box-shadow: 1vh 2vh 5vh rgb(105, 105, 105);
     transform: translate(0, 0);
     opacity: 1;
-  }
-
-  .allCards {
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10vh;
   }
 
   #video {
@@ -351,5 +329,34 @@ body {
     scale: 1;
     width: 5vw;
     padding-bottom: 2vh;
+  }
+
+
+
+  /*-------------- TITLE BAR MEDIA QUERIES -------------- */
+
+  .titleBar {
+    opacity: 1;
+    width: 70vw;
+    height: 15vh;
+    box-shadow: none;
+    margin: 0;
+    margin-bottom: 2vh;
+    background-size: cover;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+  }
+  .titleBar h1 {
+    font-size: 100%;
+  }
+
+  .titleBar p {
+    font-size: 90%;
+  }
+  .titleBar img {
+    width: 3vw;
+    margin-top: 1vh;
+    filter: sepia(20%);
+    margin-bottom: 1vh;
   }
 }

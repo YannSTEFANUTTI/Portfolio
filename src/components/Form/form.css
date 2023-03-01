@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 35vh;
+    margin-top: 40vh;
 }
 
 .formular{
@@ -17,9 +17,10 @@
     border-radius: 10vw;
     width: 70vw;
     height: auto;
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: rgba(245, 245, 245, 0.7);
     padding: 1vw;
     color: var(--fg);
+    box-shadow: 0 0 0.5vw 0.1vw rgba(0, 0, 0, 0.2);
 }
 
 .formular h1{
@@ -33,7 +34,6 @@
     font-size: 0.8vw;
     padding: 0.5vw;
     margin-top: 0.5vh;
-    text-align: center;
 }
 
 .formular textarea {
@@ -59,12 +59,16 @@
 
 
 @media screen and (max-width: 800px) {
+    .formPage{
+        margin-top: 10vh;
+    }
     .formular{
         width: 80vw;
     }
 
     .formular h1{
-        font-size: 4vw;
+        font-size: 5vw;
+        margin-top: 3vh;
     }
     .formular input{
         width: 55vw;
@@ -72,9 +76,10 @@
         font-size: 4vw;
     }
     .formular textarea{
-        width: 50vw;
+        width: 55vw;
         padding: 1vw;
         font-size: 4vw;
+        height: 40vh;
     }
     .formular button{
         width: 30vw;

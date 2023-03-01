@@ -6,6 +6,8 @@ import AllCards from "./components/AllCards/AllCards";
 import { useState, useEffect } from "react";
 import gsap from "gsap";
 
+
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -61,6 +63,18 @@ function App() {
             ease: "power4",
           },
           "-=0.75"
+        )
+        .to(
+          ".EachCard5",
+          {
+            scale: 1,
+            duration: 1,
+            rotation: 0,
+            x: -150,
+            zIndex: 5,
+            ease: "back",
+          },
+          "-=2.8"
         );
     });
     mm.add("(min-width: 2000px)", () => {
@@ -107,7 +121,7 @@ function App() {
           <TitleBar />
           <AllCards />
         </div>
-          <Form />
+        <Form />
       </div>
     </div>
   );
