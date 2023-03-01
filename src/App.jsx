@@ -66,7 +66,7 @@ function App() {
         .to(
           ".EachCard5",
           {
-            scale: 1,
+            scale: 1.2,
             duration: 1,
             rotation: 0,
             x: -150,
