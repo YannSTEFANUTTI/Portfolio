@@ -1,0 +1,89 @@
+.formPage{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+}
+
+.formular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10vw;
+    width: 70vw;
+    height: auto;
+    background-color: rgba(245, 245, 245, 0.7);
+    padding: 1vw;
+    color: var(--fg);
+    box-shadow: 0 0 0.5vw 0.1vw rgba(0, 0, 0, 0.2);
+}
+
+.formular h1{
+    font-size: 1.1vw;
+}
+
+.formular input{
+    width: 15vw;
+    border-radius: 1vw;
+    background-color: rgba(245, 245, 245, 0.5);
+    font-size: 0.8vw;
+    padding: 0.5vw;
+    margin-top: 0.5vh;
+}
+
+.formular textarea {
+    width: 50vw;
+    height: 20vh;
+    border-radius: 1vw;
+    background-color: rgba(245, 245, 245, 0.5);
+    font-size: 0.8vw;
+    padding: 1vw;
+    margin-top: 0.5vh;
+}
+
+.formular button{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 1vw;
+    background-color: rgba(245, 245, 245, 0.5);
+    font-size: 0.8vw;
+    padding: 0.5vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    .formPage{
+        margin-top: 10vh;
+    }
+    .formular{
+        width: 80vw;
+    }
+
+    .formular h1{
+        font-size: 5vw;
+        margin-top: 3vh;
+    }
+    .formular input{
+        width: 55vw;
+        padding: 1vw;
+        font-size: 4vw;
+    }
+    .formular textarea{
+        width: 55vw;
+        padding: 1vw;
+        font-size: 4vw;
+        height: 40vh;
+    }
+    .formular button{
+        width: 30vw;
+        padding: 1vw;
+        font-size: 4vw;
+    }
+}
