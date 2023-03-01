@@ -234,26 +234,27 @@ body {
   body {
     overflow-y: auto;
     background-image: url(./assets/img/desk.jpg);
-        background-size: cover;
+    background-size: cover;
     background-position: fixed;
     background-attachment: fixed;
     z-index: 0;
-     animation: AnimateBG 40s ease infinite;
-}
+    animation: AnimateBG 500s ease infinite;
+  }
 
-@keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
-  50% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
   .background {
-  display: none;}
+    display: none;
+  }
 
   .App {
     align-items: center;
@@ -262,8 +263,6 @@ body {
     width: 100vw;
     height: auto;
     justify-content: center;
-
-
   }
 
   /*-------------- CARDS MEDIA QUERIES -------------- */
@@ -275,7 +274,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 15vh;
+    gap: 18vh;
     margin-top: 10vh;
   }
 
@@ -341,8 +340,6 @@ body {
     width: 5vw;
     padding-bottom: 2vh;
   }
-
-
 
   /*-------------- TITLE BAR MEDIA QUERIES -------------- */
 
