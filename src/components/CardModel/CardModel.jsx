@@ -22,6 +22,7 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
         start: "top 50%",
         end: "+=100%",
         scrub: true,
+        pinType: "fixed",
       },
     });
   });
