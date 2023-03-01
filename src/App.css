@@ -247,6 +247,9 @@ body {
     height: auto;
     justify-content: center;
     background-image: url(./assets/img/desk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
 
   }
 
