@@ -239,6 +239,8 @@ body {
     background-attachment: fixed;
     z-index: 0;
     animation: AnimateBG 500s ease infinite;
+    scroll-behavior: smooth;
+    overflow: auto;
   }
 
   @keyframes AnimateBG {
