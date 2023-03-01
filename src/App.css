@@ -234,12 +234,13 @@ body {
   body {
     overflow-y: auto;
     background: url(./assets/img/desk_mobile.jpg) center/cover no-repeat;
-    background-size: 300vw;
+    background-size: cover;
     background-position: fixed;
     background-attachment: fixed;
     z-index: 0;
     animation: AnimateBG 400s ease infinite;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling:touch;
   }
 
   @keyframes AnimateBG {
