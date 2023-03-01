@@ -4,6 +4,7 @@ import derniereHeure from "../assets/videos/derniereHeure.mp4";
 import WindaStreet from "../assets/videos/WindaStreet.mp4";
 import Ian from "../assets/videos/Ian.mp4";
 import Goop from "../assets/videos/goop.mp4";
+import Chaban from "../assets/videos/Chaban.mp4";
 
 const data = [
   {
@@ -28,7 +29,6 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
       "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
     web: "https://youtu.be/Fxnu3otAR0Q",
     video: WindaStreet,
-    class: "toAnimate",
   },
   {
     id: 2,
@@ -38,7 +38,6 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
     gitHub: "https://github.com/YannSTEFANUTTI/WorldWildHero",
     web: "https://projet2-q67dmyvlt-alexandrepre.vercel.app/",
     video: WorldWildHeroes,
-    class: "toAnimate",
   },
   {
     id: 3,
@@ -48,7 +47,6 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
     gitHub: "https://github.com/YannSTEFANUTTI/Hackathon-DerniereHeure",
     web: "https://hackaton-sage.vercel.app/",
     video: derniereHeure,
-    class: "toAnimate",
   },
   {
     id: 4,
@@ -58,7 +56,6 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
     gitHub: "https://github.com/YannSTEFANUTTI/GoOp/",
     web: "https://youtu.be/8cSBJfSfOOI",
     video: Goop,
-    class: "toAnimate",
   },
 
   {
@@ -69,7 +66,15 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
     gitHub: "https://github.com/YannSTEFANUTTI/theWeeknd-project",
     web: "https://gregodges.github.io/theWeeknd-project/",
     video: TheWeeknd,
-    class: "toAnimate",
+  },
+  {
+    id: 7,
+    title: "Le pont Chaban-Delmas",
+    date: "09/22",
+    txt: "Vous pouvez consulter les jours et horaires de fermeture du Pont Chaban-Delmas grâce à cette application simple et efficace. Un compte à rebours est également disponible pour vous prévenir de sa prochaine fermeture. Vous pouvez sélectionner le bateau de passage ou une date. Tailwind pour le CSS et React sont les acteurs majeurs de ce projet. ",
+    gitHub: "https://github.com/YannSTEFANUTTI/Pont-Chaban-Delmas",
+    web: "https://ys-chabandelmas.netlify.app/",
+    video: Chaban,
   },
 ];
 

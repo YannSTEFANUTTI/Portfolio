@@ -73,6 +73,26 @@ body {
   font-family: CenturyGothic, "Roboto", "sans-serif";
 }
 
+.dontTouch{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.13);
+  opacity: 1;
+  position: fixed;
+}
+
+.dontTouch img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5vw;
+  filter: sepia(100%);
+  opacity: 0.6;
+}
+
 /*-------------- CARDS -------------- */
 .allCards {
   display: flex;
@@ -233,17 +253,29 @@ body {
 @media screen and (max-width: 800px) {
   body {
     overflow-y: auto;
-    background-size: 100vw 1500vh;
+    background: url(./assets/img/desk_mobile.jpg) center/cover no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
     z-index: 0;
+    animation: AnimateBG 400s ease infinite;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
   .background {
-    background-attachment: fixed;
-    background-image: url(./assets/img/desk.jpg);
-    background-size: cover;
-    opacity: 0.4;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
+    display: none;
   }
 
   .App {
@@ -255,6 +287,10 @@ body {
     justify-content: center;
   }
 
+  .dontTouch{
+    display: none;
+  }
+
   /*-------------- CARDS MEDIA QUERIES -------------- */
 
   .allCards {
@@ -264,7 +300,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 15vh;
+    gap: 18vh;
     margin-top: 10vh;
   }
 
@@ -330,8 +366,6 @@ body {
     width: 5vw;
     padding-bottom: 2vh;
   }
-
-
 
   /*-------------- TITLE BAR MEDIA QUERIES -------------- */
 

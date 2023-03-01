@@ -8,10 +8,11 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
+
   let mm = gsap.matchMedia();
   const TL = gsap.timeline();
 
-  //-----------------   SCROLLTRIGGER ON MOBIL   -------------------//
+  //-----------------   SCROLLTRIGGER ON MOBILE   -------------------//
   mm.add("(max-width: 800px)", () => {
     gsap.to(`.EachCard${id}`, {
       rotate: 0,
@@ -22,6 +23,7 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
         start: "top 50%",
         end: "+=100%",
         scrub: true,
+        pinType: "fixed",
       },
     });
   });
