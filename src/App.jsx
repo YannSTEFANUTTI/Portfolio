@@ -5,8 +5,7 @@ import TitleBar from "./components/TitleBar/TitleBar";
 import AllCards from "./components/AllCards/AllCards";
 import { useState, useEffect } from "react";
 import gsap from "gsap";
-
-
+import loader from "./assets/img/loading.gif";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -79,16 +78,18 @@ function App() {
         .to(
           ".dontTouch",
           {
-           opacity: 0,
-           duration: 0.5,
-          }, "<"
+            opacity: 0,
+            duration: 0.5,
+          },
+          "<"
         )
         .to(
           ".dontTouch",
           {
-           display: "none",
-          }, "<"
-        )
+            display: "none",
+          },
+          "<"
+        );
     });
     mm.add("(min-width: 2000px)", () => {
       const TL = gsap.timeline();
@@ -158,7 +159,9 @@ function App() {
       <div>
         <div className="background" />
         <div className="App" onLoad={handleLoad}>
-          <div className="dontTouch"> <img src="/src/assets/img/loading.gif" alt="loading" /></div>
+          <div className="dontTouch">
+            <img src={loader} alt="loader" />
+          </div>
           <TitleBar />
           <AllCards />
         </div>
