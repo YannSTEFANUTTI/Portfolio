@@ -1,6 +1,5 @@
-import { useState, useEffect, useRef } from "react";
-import Github from "../../assets/img/Gitlogo.png";
-import netlogo from "../../assets/img/netlogo.png";
+import Github from "../../assets/img/GitlogoBlue.png";
+import netlogo from "../../assets/img/netlogoBlue.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";

@@ -1,11 +1,12 @@
 import "./App.css";
 import "./loader.css";
 import Form from "./components/Form/Form";
-import TitleBar from "./components/TitleBar/TitleBar";
 import AllCards from "./components/AllCards/AllCards";
+import NavBar from "./components/NavBar/NavBar";
 import { useState, useEffect } from "react";
 import gsap from "gsap";
 import loader from "./assets/img/loading.gif";
+import PersoCase from "./components/PersoCase/PersoCase";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -64,18 +65,6 @@ function App() {
           "-=0.75"
         )
         .to(
-          ".EachCard5",
-          {
-            scale: 1.2,
-            duration: 1,
-            rotation: 0,
-            x: -150,
-            zIndex: 5,
-            ease: "back",
-          },
-          "-=2.8"
-        )
-        .to(
           ".dontTouch",
           {
             opacity: 0,
@@ -125,18 +114,6 @@ function App() {
           "-=0.75"
         )
         .to(
-          ".EachCard5",
-          {
-            scale: 1,
-            duration: 1,
-            rotation: 0,
-            x: -150,
-            zIndex: 5,
-            ease: "back",
-          },
-          "-=2.8"
-        )
-        .to(
           ".dontTouch",
           {
             opacity: 0,
@@ -162,7 +139,8 @@ function App() {
           <div className="dontTouch">
             <img src={loader} alt="loader" />
           </div>
-          <TitleBar />
+          <NavBar />
+          <PersoCase />
           <AllCards />
         </div>
         <Form />

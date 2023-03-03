@@ -1,0 +1,75 @@
+
+.persoCase {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(4px);
+  padding: 1vw;
+  margin-top: 2vw;
+  border-radius: 5vw;
+  align-items: center;
+  box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
+}
+
+.persoCase h1 {
+  font-size: 1.5vw;
+ margin: 0;
+  color: var(--fg);
+}
+
+.persoCase h2 {
+  font-size: 1vw;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  color: #3b5e91;
+}
+
+.picturePerso {
+  width: auto;
+  height: 16vw;
+  align-self: center;
+}
+
+.pictureAndSide {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.persoSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;}
+
+#persoTxt {
+  font-size: 0.9vw;
+  width: 20vw;
+  text-align: justify;
+  color: var(--fg);
+  margin: 0;
+  padding: 1vw;
+}
+
+.allPictos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.allPictos p {
+  margin-top: 0vh;
+  font-size: 0.6vw;
+  color: #3b5e91;
+  font-weight: 700;
+}
+
+.eachPicto {
+  width: 2.3vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  border-radius: 0.2vw;
+}
