@@ -12,19 +12,37 @@ gsap.registerPlugin(Draggable);
 const NavBar = () => {
   const navRef = useRef(null);
 
-  function handleClick() {
+  const handleClick = () => {
     const { x, y, width, height } = navRef.current.getBoundingClientRect();
     const centerX = x + width / 2;
     const centerY = y + height / 2;
     gsap.set(navRef.current, {
       transformOrigin: `${centerX}px ${centerY}px`,
     });
-  }
+  };
+
+  const hoverIn = (id) => {
+    gsap.to(`.${id}`, {
+      x: "2vw",
+      opacity: "1",
+      duration: 0.5,
+      ease: "back",
+    });
+  };
+
+  const hoverOut = (id) => {
+    gsap.to(`.${id}`, {
+      x: "0",
+      opacity: "0",
+      duration: 0.2,
+      ease: "backpower2.inOut",
+    });
+  };
 
   useEffect(() => {
     gsap.set(navRef.current, {
-      x: "50%",
-      y: "50%",
+      x: "0",
+      y: "0",
       transformOrigin: "center",
     });
     Draggable.create(navRef.current, {
@@ -44,36 +62,30 @@ const NavBar = () => {
   return (
     <div ref={navRef} className="navBar">
       <img src={move} alt="move" id="move" />
-      <a
-        className="nameTitle"
-        onMouseEnter={() => handleZoomIn()}
-        onMouseLeave={() => handleZoomOut()}
-        href={""}
-        target="_blank"
-        rel="noreferrer"
+      <div
+        className="shortcuts"
+        onMouseEnter={() => hoverIn("home")}
+        onMouseLeave={() => hoverOut("home")}
       >
         <img id="home" src={home} alt="home link" />
-      </a>
-      <a
-        className="nameTitle"
-        onMouseEnter={() => handleZoomIn()}
-        onMouseLeave={() => handleZoomOut()}
-        href={""}
-        target="_blank"
-        rel="noreferrer"
+        <h3 className="home">Home</h3>
+      </div>
+      <div
+        className="shortcuts"
+        onMouseEnter={() => hoverIn("projet")}
+        onMouseLeave={() => hoverOut("projet")}
       >
         <img src={projet} alt="projet link" />
-      </a>
-      <a
-        className="nameTitle"
-        onMouseEnter={() => handleZoomIn()}
-        onMouseLeave={() => handleZoomOut()}
-        href={""}
-        target="_blank"
-        rel="noreferrer"
+        <h3 className="projet">Projet</h3>
+      </div>
+      <div
+        className="shortcuts"
+        onMouseEnter={() => hoverIn("contact")}
+        onMouseLeave={() => hoverOut("contact")}
       >
         <img src={contact} alt="contact link" />
-      </a>
+        <h3 className="contact">Contact</h3>
+      </div>
     </div>
   );
 };

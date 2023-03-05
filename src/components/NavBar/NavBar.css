@@ -3,20 +3,42 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: 0;
+  top: 13vh;
+  left: 2vw;
   align-items: center;
-  left: 1vw;
   opacity: 1;
   height: auto;
   width: 2.5;
   backdrop-filter: blur(10px);
- background-color: rgb(235, 235, 235, 0.15);
- border: solid 1px rgb(235, 235, 235, 0.585);
+  background-color: rgb(235, 235, 235, 0.15);
+  border: solid 1px rgb(235, 235, 235, 0.2);
+  box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
   border-radius: 1vw;
   padding-inline: 0.5vw;
   padding-block: 2vh;
   gap: 3vh;
   cursor: initial !important;
+  z-index: 2;
+}
+
+.shortcuts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navBar h3 {
+  font-size: 1vw;
+  color: #3b5e91;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  transform: translate(0, 0%);
+  background-color: rgb(235, 235, 235, 0.15);
+  border: solid 1px rgb(235, 235, 235, 0.2);
+  box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
+  padding: 0.2vw;
 }
 
 .nameAnim {
@@ -40,12 +62,12 @@
   width: 1.3vw;
 }
 
-#move{
+#move {
   cursor: grab;
 }
 
 #home {
-  width: 1.7vw;
+  scale: 1.2;
 }
 
 @media screen and (max-width: 800px) {
