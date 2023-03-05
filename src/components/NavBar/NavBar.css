@@ -1,6 +1,55 @@
+.navBar {
+  position: absolute;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  align-items: center;
+  left: 1vw;
+  opacity: 1;
+  height: auto;
+  width: 2.5;
+  backdrop-filter: blur(10px);
+ background-color: rgb(235, 235, 235, 0.15);
+ border: solid 1px rgb(235, 235, 235, 0.585);
+  border-radius: 1vw;
+  padding-inline: 0.5vw;
+  padding-block: 2vh;
+  gap: 3vh;
+  cursor: initial !important;
+}
+
+.nameAnim {
+  position: absolute;
+  transform: translate(10%, -50%);
+  opacity: 0;
+  scale: 1.5;
+  z-index: 3;
+}
+
+.navBar p {
+  font-size: 0.8vw;
+  margin-top: 0;
+  color: rgb(73, 114, 165);
+  font-family: gothicb, "Roboto", "sans-serif";
+  text-align: center;
+}
+
+.navBar img {
+  height: auto;
+  width: 1.3vw;
+}
+
+#move{
+  cursor: grab;
+}
+
+#home {
+  width: 1.7vw;
+}
+
 @media screen and (max-width: 800px) {
- 
-  .titleBar {
+  .navBar {
     opacity: 1;
     position: initial;
     width: 70vw;
@@ -13,18 +62,17 @@
     border-bottom-left-radius: 3vw;
     border-bottom-right-radius: 3vw;
   }
-  .titleBar h1 {
+  .navBar h1 {
     font-size: 100%;
   }
 
-  .titleBar p {
+  .navBar p {
     font-size: 90%;
   }
-  .titleBar img {
+  .navBar img {
     width: 3vw;
     margin-top: 1vh;
     filter: sepia(20%);
     margin-bottom: 1vh;
   }
- 
 }
