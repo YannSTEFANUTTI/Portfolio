@@ -1,13 +1,14 @@
 import IanPicture from "../../assets/img/IanPicture_noWhite.png";
 import PictosCase from "./PictosCase";
 import dataPictos from "../../assets/dataPictos";
+import Tron from "../Tron/Tron";
 import "./persoCase.css";
 
 const PersoCase = () => {
   return (
     <div className="persoCase">
       <div className="pictureAndSide">
-        <img src={IanPicture} alt="PicturePerso" className="picturePerso" />
+        <Tron />
         <div className="persoSide">
           <h1>Yann Stefanutti</h1>
           <h2>Développeur React Node JS</h2>

@@ -16,7 +16,6 @@ const AllCards = () => {
         </p>
       </div>
       <div className="allCards">
-        {" "}
         <div></div>
         {data &&
           data.map((el) => (

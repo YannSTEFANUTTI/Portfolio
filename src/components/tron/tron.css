@@ -1,67 +1,31 @@
-
 #container {
-    outline: 1px solid transparent;
-    position: absolute;
-    left:50%;
-    top:50%;
-    margin-left: -250px;
-    margin-top: -265px;
-    height: 537px;
-    width: 500px;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    background: url('../../assets/img/IanPicture_noWhite.png') no-repeat;
-    transform: translateZ(0px);
-    -moz-transform: translateZ(0px);
-    -webkit-transform: translateZ(0px);
-}
-
-.figure{
-width: 142px;
-height: 483px;
-background: url('../../assets/img/IanPicture_noWhite.png') no-repeat;
-position: absolute;
-transform: translateZ(120px);
--moz-transform: translateZ(120px);
--webkit-transform: translateZ(120px);
-bottom: 0px;
-left: 50%;
-margin-left: -71px;
-}
-
-.gsap {
-outline: 1px solid transparent;
-width: 396px;
-height: 128px;
-background: url('http://zadesigns.com/tron/GSAP.png') no-repeat;
-position: absolute;
-transform: translateZ(60px);
--moz-transform: translateZ(60px);
--webkit-transform: translateZ(60px);
-top: 30px;
-left: 50%;
-margin-left: -198px;
-}
-.tagline {
-  width:500px;
   outline: 1px solid transparent;
+  height: 16.5vw;
+  width: 16vw;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  background: url("../../assets/img/IanPicture_noWhite.png");
+  background-size: cover;
+  transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  -webkit-transform: translateZ(0px);
+}
+
+.tagline {
   position: absolute;
   transform: translateZ(80px);
   -moz-transform: translateZ(80px);
   -webkit-transform: translateZ(80px);
-  bottom: 0px;
-  left:50%;
-  margin-left:-280px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background: rgba(0,0,0,0.6);
-  font-family: Arial, Helvetica, "Helvetica-Neue", san-serif;
-  color: #FFF;
-  font-size: 30px;
-  line-height: 60px;
-  text-align:center;
-  color: #F9E48B;
-  text-transform: uppercase;
-
+  bottom: 3vw;
+  left: 11vw;
+  text-align: center;
+  font-size: 0.7vw;
+  color: #3b5e91;
+  font-weight: 800;
+  background-color: rgba(235, 235, 235, 0.65);
+  border: solid 1px rgb(235, 235, 235, 0.2);
+  border-radius: 0vw 1vw 1vw 1vw;
+  box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
+  padding: 0.5vw;
 }

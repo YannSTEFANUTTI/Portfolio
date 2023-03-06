@@ -5,8 +5,8 @@ import "./tron.css";
 function Tron() {
   const requestRef = useRef();
   const mouse = useRef({ x: 0, y: 0 });
-  const cx = window.innerWidth / 2;
-  const cy = window.innerHeight / 2;
+  const cx = window.innerWidth;
+  const cy = window.innerHeight;
 
   const handleMouseMove = (event) => {
     mouse.current.x = event.pageX;
@@ -53,8 +53,7 @@ function Tron() {
   return (
     <div id="container">
       <div class="gsap"></div>
-      <div class="figure"></div>
-      <div class="tagline">GSAP 3D Parallax Demo</div>
+      <div class="tagline">Open to work !</div>
     </div>
   );
 }

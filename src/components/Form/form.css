@@ -71,6 +71,7 @@
   border-radius: 0.5vw;
   box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
   padding: 0.2vw;
+  opacity: 0;
 }
 
 .formular input {
