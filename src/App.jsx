@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import gsap from "gsap";
 import loader from "./assets/img/loading.gif";
 import PersoCase from "./components/PersoCase/PersoCase";
+import Tron from "./components/tron/Tron";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -145,6 +146,7 @@ function App() {
         </div>
         <Form />
       </div>
+      <Tron />
     </div>
   );
 }

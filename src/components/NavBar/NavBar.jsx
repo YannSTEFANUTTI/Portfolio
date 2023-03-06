@@ -11,6 +11,7 @@ gsap.registerPlugin(Draggable);
 
 const NavBar = () => {
   const navRef = useRef(null);
+  let animation = gsap.timeline();
 
   const handleClick = () => {
     const { x, y, width, height } = navRef.current.getBoundingClientRect();
@@ -22,21 +23,34 @@ const NavBar = () => {
   };
 
   const hoverIn = (id) => {
-    gsap.to(`.${id}`, {
-      x: "2vw",
-      opacity: "1",
-      duration: 0.5,
-      ease: "back",
-    });
-  };
+    let animation = gsap.timeline();
 
-  const hoverOut = (id) => {
-    gsap.to(`.${id}`, {
-      x: "0",
-      opacity: "0",
-      duration: 0.2,
-      ease: "backpower2.inOut",
-    });
+    animation.kill();
+    animation = gsap
+      .timeline()
+      .to(`.${id}`, {
+        display: "block",
+        scale: "1",
+        x: "2vw",
+        opacity: "1",
+        duration: 0.5,
+        ease: "back",
+      })
+      .to(`.${id}`, {
+        x: "2vw",
+        scale: "1.2",
+        opacity: "0",
+        duration: 0.2,
+        delay: 0.5,
+        ease: "back",
+      })
+      .to(`.${id}`, {
+        x: "0",
+        scale: "1",
+        opacity: "0",
+        duration: 0,
+        display: "none",
+      });
   };
 
   useEffect(() => {
@@ -59,13 +73,42 @@ const NavBar = () => {
       },
     });
   }, []);
+
+  const formPage = document.querySelector(".formPage");
+  const homePage = document.querySelector(".persoCase");
+  const projetPage = document.querySelector(".allCardsPage");
+
+  const homeClick = () => {
+    gsap.to(window, {
+      duration: 2,
+      scrollTo: homePage,
+      ease: "power4.out"
+    });
+  };
+
+  const projetClick = () => {
+    gsap.to(window, {
+      duration: 2,
+      scrollTo: projetPage,
+      ease: "power4.out"
+    });
+  };
+
+  const contactClick = () => {
+    gsap.to(window, {
+      duration: 2,
+      ease: "power4.out",
+      scrollTo: formPage,
+    });
+  };
+
   return (
     <div ref={navRef} className="navBar">
       <img src={move} alt="move" id="move" />
       <div
         className="shortcuts"
         onMouseEnter={() => hoverIn("home")}
-        onMouseLeave={() => hoverOut("home")}
+        onClick={homeClick}
       >
         <img id="home" src={home} alt="home link" />
         <h3 className="home">Home</h3>
@@ -73,15 +116,15 @@ const NavBar = () => {
       <div
         className="shortcuts"
         onMouseEnter={() => hoverIn("projet")}
-        onMouseLeave={() => hoverOut("projet")}
+        onClick={projetClick}
       >
         <img src={projet} alt="projet link" />
-        <h3 className="projet">Projet</h3>
+        <h3 className="projet">Projets</h3>
       </div>
       <div
         className="shortcuts"
         onMouseEnter={() => hoverIn("contact")}
-        onMouseLeave={() => hoverOut("contact")}
+        onClick={contactClick}
       >
         <img src={contact} alt="contact link" />
         <h3 className="contact">Contact</h3>

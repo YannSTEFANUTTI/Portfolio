@@ -24,13 +24,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-size: 300vw 300vw;
+  background-size: 300vw 300vh;
   background-image: linear-gradient(
-    -45deg,
-    rgb(206, 201, 145) 0%,
-    rgb(120, 136, 216) 25%,
-    rgb(215, 125, 125) 51%,
-    rgb(255, 255, 255) 100%
+    90deg,
+    rgba(255, 0, 0, 0.342) 0%,
+    rgba(255, 0, 0, 0.308) 25%,
+    rgb(208, 242, 255) 51%,
+    rgb(110, 133, 248) 100%
   );
   animation: AnimateBG 20s ease infinite;
 }
@@ -48,9 +48,9 @@ body {
 }
 
 .background {
-  background-image: url(./assets/img/desk.jpg);
+  background-image: url(./assets/img/5026563.jpg);
   background-size: cover;
-  opacity: 0.4;
+  opacity: 0.5;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -59,12 +59,9 @@ body {
 }
 
 .App {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+  align-items: center;
 }
 
 * {
@@ -93,25 +90,54 @@ body {
 
 /*-------------- CARDS -------------- */
 
+.allCardsPage {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-top: 4vw;
+  color: rgb(54, 54, 54);
+  backdrop-filter: blur(4px);
+  padding: 2vw;
+  border-radius: 2vw;
+  box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
+}
+
+.allCardsPres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.allCardsPres h1 {
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+.allCardsPres h2 {
+  font-size: 1vw;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  color: #3b5e91;
+}
+
 .allCards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 80vw;
   z-index: 1;
+  margin-top: -4vw;
+  padding-bottom: 4vw;
 }
 
-.allCards h1 {
-  font-size: 1.5vw;
-  color: rgb(54, 54, 54);
-  margin: 0;
+.allCardsTxt {
+  font-size: 0.9vw;
+  width: 55vw;
 }
-
 
 #fullCard {
   margin-right: 1vw;
   rotate: 0deg;
-  height: auto;
   width: 12vw;
   display: flex;
   flex-direction: column;
@@ -154,6 +180,7 @@ body {
   text-align: left;
   padding-left: 1vw;
 }
+
 #fullCard p {
   font-size: 0.55vw;
   margin: 0;
@@ -214,14 +241,6 @@ body {
   margin-top: 0.5vw;
 }
 
-.nameAnim {
-  position: absolute;
-  transform: translate(10%, -50%);
-  opacity: 0;
-  scale: 1.5;
-  z-index: 3;
-}
-
 .titleBar p {
   font-size: 0.8vw;
   margin-top: 0;
@@ -267,30 +286,11 @@ body {
 @media screen and (max-width: 800px) {
   body {
     overflow-y: auto;
-    background: url(./assets/img/desk_mobile.jpg) center/cover no-repeat;
-    background-size: cover;
-    background-position: fixed;
-    background-attachment: fixed;
     z-index: 0;
-    animation: AnimateBG 400s ease infinite;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
   }
 
-  @keyframes AnimateBG {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 50% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  .background {
-    display: none;
-  }
 
   .App {
     align-items: center;

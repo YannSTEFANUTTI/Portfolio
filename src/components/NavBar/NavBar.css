@@ -8,7 +8,6 @@
   align-items: center;
   opacity: 1;
   height: auto;
-  width: 2.5;
   backdrop-filter: blur(10px);
   background-color: rgb(235, 235, 235, 0.15);
   border: solid 1px rgb(235, 235, 235, 0.2);
@@ -29,33 +28,18 @@
 }
 
 .navBar h3 {
-  font-size: 1vw;
+  display: none;
+  font-size: 0.9vw;
   color: #3b5e91;
   position: absolute;
-  z-index: 0;
   opacity: 0;
-  transform: translate(0, 0%);
-  background-color: rgb(235, 235, 235, 0.15);
+  background-color: rgb(235, 235, 235, 0.3);
   border: solid 1px rgb(235, 235, 235, 0.2);
+  border-radius: 0.5vw;
   box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
   padding: 0.2vw;
 }
 
-.nameAnim {
-  position: absolute;
-  transform: translate(10%, -50%);
-  opacity: 0;
-  scale: 1.5;
-  z-index: 3;
-}
-
-.navBar p {
-  font-size: 0.8vw;
-  margin-top: 0;
-  color: rgb(73, 114, 165);
-  font-family: gothicb, "Roboto", "sans-serif";
-  text-align: center;
-}
 
 .navBar img {
   height: auto;

@@ -3,8 +3,9 @@
   flex-direction: column;
   backdrop-filter: blur(4px);
   padding: 1vw;
+  padding-inline: 5vw;
   margin-top: 3vh;
-  border-radius: 5vw;
+  border-radius: 2vw;
   align-items: center;
   box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
 }
@@ -70,7 +71,7 @@
 
 .eachPicto {
   width: 2.3vw;
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
   border-radius: 0.2vw;
 }
