@@ -3,16 +3,22 @@ import gsap from "gsap";
 import github from "../../assets/img/_github.png";
 import linkedin from "../../assets/img/_linkedin.png";
 import phone from "../../assets/img/_phone.png";
+import CV from "../../assets/img/YannStefanutti.pdf";
+import curriculum from "../../assets/img/_CV.png";
 import "./form.css";
+
 const Form = () => {
   const handlePhone = () => {
-    window.open("tel:06 62 62 62 62");
+    window.open("tel:0665730365");
   };
   const handleLinkedin = () => {
     window.open("https://www.linkedin.com/in/ystefanutti/");
   };
   const handleGithub = () => {
     window.open("https://github.com/YannSTEFANUTTI");
+  };
+  const handleCurriculum = () => {
+    window.open( CV );
   };
 
   const hoverIn = (id) => {
@@ -24,13 +30,13 @@ const Form = () => {
       .to(`.${id}`, {
         display: "initial",
         scale: "1",
-        x: "2vw",
+        x: "3vw",
         opacity: "1",
         duration: 0.5,
         ease: "back",
       })
       .to(`.${id}`, {
-        x: "2vw",
+        x: "3vw",
         scale: "1.2",
         opacity: "0",
         duration: 0.2,
@@ -54,13 +60,13 @@ const Form = () => {
      .to(`.${id}`, {
        display: "initial",
        scale: "1",
-       x: "2vw",
+       x: "3vw",
        opacity: "1",
        duration: 0.5,
        ease: "back",
      })
      .to(`.${id}`, {
-       x: "2vw",
+       x: "3vw",
        scale: "1.2",
        opacity: "0",
        duration: 0.2,
@@ -88,6 +94,7 @@ const Form = () => {
             method="POST"
             data-netlify="true"
             onSubmit="submit"
+            action="../success/"
           >
             <img src={mail} alt="mail" />
             <p>
@@ -119,7 +126,16 @@ const Form = () => {
               />
               <h3 className="phoneTxt">06.65.73.03.65</h3>
             </div>
-            <div className="github">
+            <div className="curriculum">
+              <img
+                src={curriculum}
+                alt="curriculum"
+                onClick={handleCurriculum}
+                onMouseEnter={() => hoverIn("curriculumTxt")}
+              />
+              <h3 className="curriculumTxt">curriculum</h3>
+            </div>
+            <div className="linkedin">
               <img
                 src={linkedin}
                 alt="linkedin"

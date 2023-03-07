@@ -1,7 +1,7 @@
 .formPage {
   margin: auto;
   margin-bottom: 5vw;
-  width: 22vw;
+  width: 23vw;
   margin-top: 4vw;
   color: var(--fg);
 }
@@ -55,15 +55,16 @@
 
 .phone,
 .github,
-.linkedin {
+.linkedin,
+.curriculum {
   cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.pictosContact h3{
-    margin: 0;
+.pictosContact h3 {
+  margin: 0;
   font-size: 0.9vw;
   color: #3b5e91;
   background-color: rgb(235, 235, 235, 0.3);

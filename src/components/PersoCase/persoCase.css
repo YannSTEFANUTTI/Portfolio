@@ -75,3 +75,21 @@
   margin-right: 0.5vw;
   border-radius: 0.2vw;
 }
+
+#pictureMobile {
+  display: none;
+}
+
+#pictureDesktop {
+  display: initial;
+}
+
+@media screen and (max-width: 800px) {
+#pictureMobile {
+  display: initial;
+}
+
+#pictureDesktop {
+  display: none;
+}
+}
