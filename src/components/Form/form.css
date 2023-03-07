@@ -142,15 +142,28 @@
 @media screen and (max-width: 800px) {
   .formPage {
     margin-top: 10vh;
+    margin: auto;
+    margin-bottom: 5vw;
+    width: 80vw;
+    margin-top: 4vw;
   }
   .formular {
-    width: 80vw;
+    width: 62vw;
   }
 
-  .formular h1 {
-    font-size: 5vw;
+  .formAll h1 {
+    font-size: 6vw;
     margin-top: 3vh;
   }
+
+  .formAll h2 {
+    font-size: 5vw;
+  }
+
+  .formularLabel {
+    font-size: 4vw;
+  }
+
   .formular input {
     width: 55vw;
     padding: 1vw;
@@ -164,7 +177,20 @@
   }
   .formular button {
     width: 30vw;
-    padding: 1vw;
+    padding: 3vw;
     font-size: 4vw;
+    border-radius: 3vw;
+    margin-top: 4vw;
   }
+
+  .formPage img {
+    width: 8vw;
+    border-radius: 0.2vw;
+    margin-top: 5vw;
+  }
+
+  .pictosContact h3 {
+   display: none;
+  }
+
 }
