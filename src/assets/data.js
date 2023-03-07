@@ -7,9 +7,9 @@ import Goop from "../assets/videos/goop.mp4";
 import Chaban from "../assets/videos/Chaban.mp4";
 
 const data = [
-  {
+/*   {
     id: 5,
-    title: "Développeur Full Stack",
+    title: "DEVELOPPEUR WEB FULL STACK",
     date: "06.65.73.03.65",
     txt: `Fort de dix années dans l'Audiovisuel durant lesquelles j'ai régulièrement
 collaboré sur des projets web, j'ai l'ambition de poursuivre ma carrière
@@ -18,7 +18,7 @@ mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un
     gitHub: "https://github.com/YannSTEFANUTTI",
     web: "https://www.linkedin.com/in/ystefanutti/",
     video: Ian,
-  },
+  }, */
   {
     id: 6,
     title: "Street Art ludique",

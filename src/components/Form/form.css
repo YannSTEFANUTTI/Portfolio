@@ -1,89 +1,199 @@
-.formPage{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40vh;
+.formPage {
+  margin: auto;
+  margin-bottom: 5vw;
+  width: 23vw;
+  margin-top: 4vw;
+  color: var(--fg);
 }
 
-.formular{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10vw;
-    width: 70vw;
-    height: auto;
-    background-color: rgba(245, 245, 245, 0.7);
-    padding: 1vw;
-    color: var(--fg);
-    box-shadow: 0 0 0.5vw 0.1vw rgba(0, 0, 0, 0.2);
+.formular {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-top: 1vw;
 }
 
-.formular h1{
-    font-size: 1.1vw;
+.formular p {
+  margin: 0;
+  font-size: 0.9vw;
 }
 
-.formular input{
-    width: 15vw;
-    border-radius: 1vw;
-    background-color: rgba(245, 245, 245, 0.5);
-    font-size: 0.8vw;
-    padding: 0.5vw;
-    margin-top: 0.5vh;
+.formAll {
+  backdrop-filter: blur(4px);
+  padding: 2vw !important;
+  border-radius: 2vw;
+  box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
+}
+
+.formPage h1 {
+  font-size: 1.5vw;
+  margin: 0;
+  color: rgb(54, 54, 54);
+  width: auto;
+}
+
+.formPage h2 {
+  font-size: 1vw;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  color: #3b5e91;
+  width: auto;
+}
+
+.containForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  gap: 3vw;
+}
+
+.formPage img {
+  width: 2.3vw;
+  border-radius: 0.2vw;
+}
+
+.phone,
+.github,
+.linkedin,
+.curriculum {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pictosContact h3 {
+  margin: 0;
+  font-size: 0.9vw;
+  color: #3b5e91;
+  background-color: rgb(235, 235, 235, 0.3);
+  border: solid 1px rgb(235, 235, 235, 0.2);
+  border-radius: 0.5vw;
+  box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
+  padding: 0.2vw;
+  opacity: 0;
+}
+
+.curriculumTxt {
+  font-size: 0.9vw;
+  width: 7vw !important;
+}
+
+.formular input {
+  width: 12vw;
+  border-radius: 1vw;
+  background-color: rgba(245, 245, 245, 0.5);
+  border: solid 0.1vw #3b5e91;
+  font-size: 0.8vw;
+  padding: 0.7vw;
+}
+
+.formular input:focus {
+  outline: none;
+}
+
+.formularLabel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5vw;
+  width: auto;
 }
 
 .formular textarea {
-    width: 50vw;
-    height: 20vh;
-    border-radius: 1vw;
-    background-color: rgba(245, 245, 245, 0.5);
-    font-size: 0.8vw;
-    padding: 1vw;
-    margin-top: 0.5vh;
+  width: 12vw;
+  height: 14vw;
+  border-radius: 1vw;
+  background-color: rgba(245, 245, 245, 0.5);
+  font-size: 0.8vw;
+  padding: 0.7vw;
+  margin-top: 0.5vh;
+  border: solid 0.1vw #3b5e91;
 }
 
-.formular button{
-    width: 10vw;
-    height: 5vh;
-    border-radius: 1vw;
-    background-color: rgba(245, 245, 245, 0.5);
-    font-size: 0.8vw;
-    padding: 0.5vw;
-    text-align: center;
-    cursor: pointer;
+.formular textarea:focus {
+  outline: none;
 }
 
+.formular button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 5vw;
+  height: 2vw;
+  margin-top: 1vw;
+  border-radius: 1vw;
+  background-color: rgba(245, 245, 245, 0.5);
+  font-size: 0.8vw;
+  padding: 0.5vw;
+  cursor: pointer;
+  border: solid 0.1vw #3b5e91;
+}
+
+.pictosContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: auto;
+  gap: 1vw;
+}
 
 @media screen and (max-width: 800px) {
-    .formPage{
-        margin-top: 10vh;
-    }
-    .formular{
-        width: 80vw;
-    }
+  .formPage {
+    margin-top: 10vh;
+    margin: auto;
+    margin-bottom: 5vw;
+    width: 80vw;
+    margin-top: 10vw;
+  }
+  .formular {
+    width: 62vw;
+  }
 
-    .formular h1{
-        font-size: 5vw;
-        margin-top: 3vh;
-    }
-    .formular input{
-        width: 55vw;
-        padding: 1vw;
-        font-size: 4vw;
-    }
-    .formular textarea{
-        width: 55vw;
-        padding: 1vw;
-        font-size: 4vw;
-        height: 40vh;
-    }
-    .formular button{
-        width: 30vw;
-        padding: 1vw;
-        font-size: 4vw;
-    }
+  .formAll {
+    padding: 5vw !important;
+  }
+
+  .formAll h1 {
+    font-size: 6vw;
+    margin-top: 1vh;
+  }
+
+  .formAll h2 {
+    font-size: 5vw;
+  }
+
+  .formularLabel {
+    font-size: 4vw;
+  }
+
+  .formular input {
+    width: 55vw;
+    padding: 1vw;
+    font-size: 4vw;
+  }
+  .formular textarea {
+    width: 55vw;
+    padding: 1vw;
+    font-size: 4vw;
+    height: 40vh;
+  }
+  .formular button {
+    width: 30vw;
+    padding: 3vw;
+    font-size: 4vw;
+    border-radius: 3vw;
+    margin-top: 4vw;
+  }
+
+  .formPage img {
+    width: 8vw;
+    border-radius: 2vw ;
+    margin-top: 5vw;
+  }
+
+  .pictosContact h3 {
+    display: none;
+  }
 }

@@ -1,0 +1,61 @@
+.navBar {
+  position: absolute;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 13vh;
+  left: 2vw;
+  align-items: center;
+  opacity: 1;
+  height: auto;
+  backdrop-filter: blur(10px);
+  background-color: rgb(235, 235, 235, 0.15);
+  border: solid 1px rgb(235, 235, 235, 0.2);
+  box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
+  border-radius: 1vw;
+  padding-inline: 0.5vw;
+  padding-block: 2vh;
+  gap: 3vh;
+  cursor: initial !important;
+  z-index: 2;
+}
+
+.shortcuts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navBar h3 {
+  display: none;
+  font-size: 0.9vw;
+  color: #3b5e91;
+  position: absolute;
+  opacity: 0;
+  background-color: rgb(235, 235, 235, 0.3);
+  border: solid 1px rgb(235, 235, 235, 0.2);
+  border-radius: 0.5vw;
+  box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
+  padding: 0.2vw;
+}
+
+
+.navBar img {
+  height: auto;
+  width: 1.3vw;
+}
+
+#move {
+  cursor: grab;
+}
+
+#home {
+  scale: 1.2;
+}
+
+@media screen and (max-width: 800px) {
+  .navBar {
+    display: none
+    };
+  }

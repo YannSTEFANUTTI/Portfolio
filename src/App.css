@@ -24,15 +24,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  background-size: 300vw 300vw;
+  background-size: 300vw 300vh;
   background-image: linear-gradient(
-    -45deg,
-    rgb(206, 201, 145) 0%,
-    rgb(120, 136, 216) 25%,
-    rgb(215, 125, 125) 51%,
-    rgb(255, 255, 255) 100%
+    90deg,
+    rgba(255, 0, 0, 0.342) 0%,
+    rgba(255, 0, 0, 0.308) 25%,
+    rgb(208, 242, 255) 51%,
+    rgb(110, 133, 248) 100%
   );
   animation: AnimateBG 20s ease infinite;
 }
@@ -50,9 +48,9 @@ body {
 }
 
 .background {
-  background-image: url(./assets/img/desk.jpg);
+  background-image: url(./assets/img/5026563.jpg);
   background-size: cover;
-  opacity: 0.4;
+  opacity: 0.5;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -61,51 +59,65 @@ body {
 }
 
 .App {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+  align-items: center;
 }
 
 * {
   font-family: CenturyGothic, "Roboto", "sans-serif";
 }
 
-.dontTouch{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.13);
-  opacity: 1;
-  position: fixed;
-}
-
-.dontTouch img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 5vw;
-  filter: sepia(100%);
-  opacity: 0.6;
-}
-
 /*-------------- CARDS -------------- */
+
+.allCardsPage {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-top: 4vw;
+  color: rgb(54, 54, 54);
+  backdrop-filter: blur(4px);
+  padding: 2vw;
+  border-radius: 2vw;
+  box-shadow: 0 0 2vw 0.1vw rgba(141, 141, 141, 0.2);
+}
+
+.allCardsPres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.allCardsPres h1 {
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+.allCardsPres h2 {
+  font-size: 1vw;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  color: #3b5e91;
+}
+
 .allCards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 60vw;
+  width: 80vw;
   z-index: 1;
+  margin-top: -4vw;
+  padding-bottom: 4vw;
+}
+
+.allCardsTxt {
+  font-size: 0.9vw;
+  width: 55vw;
 }
 
 #fullCard {
   margin-right: 1vw;
   rotate: 0deg;
-  height: auto;
   width: 12vw;
   display: flex;
   flex-direction: column;
@@ -131,7 +143,7 @@ body {
 
 #projetID {
   font-size: 0.6vw;
-  color: rgb(128, 3, 3);
+  color: #3b5e91;
   margin: 0;
   margin-top: 0.5vw;
   font-family: gothicb, "Roboto", "sans-serif";
@@ -141,13 +153,14 @@ body {
 
 #fullCard h4 {
   font-size: 0.7vw;
-  color: var(--fg);
+  color: rgb(54, 54, 54);
   margin: 0;
   margin-top: 1vw;
   font-family: gothicb, "Roboto", "sans-serif";
   text-align: left;
   padding-left: 1vw;
 }
+
 #fullCard p {
   font-size: 0.55vw;
   margin: 0;
@@ -156,7 +169,7 @@ body {
   text-align: left;
   line-height: normal;
   height: 10vw;
-  color: var(--fg);
+  color: rgb(54, 54, 54);
 }
 
 .links {
@@ -170,6 +183,14 @@ body {
 .links img {
   scale: 0.8;
   width: 1.5vw;
+}
+
+.EachCard5 {
+  border-color: rgb(73, 114, 165) !important;
+  border: solid;
+  border-width: 0.2vw;
+  border-radius: 2vw;
+  box-shadow: 0vw 0vw 1vw rgb(73, 114, 165) !important;
 }
 
 /*-------------- TITLE BAR -------------- */
@@ -198,14 +219,6 @@ body {
   font-size: 1.1vw;
   margin: 0;
   margin-top: 0.5vw;
-}
-
-.nameAnim {
-  position: absolute;
-  transform: translate(10%, -50%);
-  opacity: 0;
-  scale: 1.5;
-  z-index: 3;
 }
 
 .titleBar p {
@@ -253,27 +266,16 @@ body {
 @media screen and (max-width: 800px) {
   body {
     overflow-y: auto;
-    background: url(./assets/img/desk_mobile.jpg) center/cover no-repeat;
-    background-size: cover;
-    background-position: fixed;
-    background-attachment: fixed;
     z-index: 0;
-    animation: AnimateBG 400s ease infinite;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling:touch;
+    -webkit-overflow-scrolling: touch;
+    animation: none;
+    background-color: #cadbf2;
+    background-image: url(./assets/img/5026563_mobile.png);
+    background-size: cover;
+    background-attachment: fixed;
   }
 
-  @keyframes AnimateBG {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 50% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
   .background {
     display: none;
   }
@@ -287,11 +289,33 @@ body {
     justify-content: center;
   }
 
-  .dontTouch{
-    display: none;
+  /*-------------- CARDS MEDIA QUERIES -------------- */
+
+  .allCardsPage {
+    margin-top: 7vw;
+    padding: 4vw;
+    width: 70vw;
   }
 
-  /*-------------- CARDS MEDIA QUERIES -------------- */
+  .allCardsPres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .allCardsPres h1 {
+    font-size: 6vw;
+    margin: 0;
+  }
+
+  .allCardsPres h2 {
+    font-size: 4.5vw;
+  }
+
+  .allCardsPres p {
+    font-size: 4vw;
+    width: 60vw;
+  }
 
   .allCards {
     align-items: center;
@@ -301,7 +325,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 18vh;
-    margin-top: 10vh;
+    margin-top: -5vh;
+    transform: translate(-5vw, 0);
   }
 
   #fullCard {
@@ -330,7 +355,6 @@ body {
 
   #projetID {
     font-size: 3vw;
-    color: rgb(128, 3, 3);
     margin: 0;
     margin-top: 1vw;
     text-align: left;
@@ -365,32 +389,5 @@ body {
     scale: 1;
     width: 5vw;
     padding-bottom: 2vh;
-  }
-
-  /*-------------- TITLE BAR MEDIA QUERIES -------------- */
-
-  .titleBar {
-    opacity: 1;
-    width: 70vw;
-    height: 15vh;
-    box-shadow: none;
-    margin: 0;
-    margin-bottom: 2vh;
-    background-size: cover;
-    border-bottom-left-radius: 3vw;
-    border-bottom-right-radius: 3vw;
-  }
-  .titleBar h1 {
-    font-size: 100%;
-  }
-
-  .titleBar p {
-    font-size: 90%;
-  }
-  .titleBar img {
-    width: 3vw;
-    margin-top: 1vh;
-    filter: sepia(20%);
-    margin-bottom: 1vh;
   }
 }
