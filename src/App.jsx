@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar/NavBar";
 import { useState, useEffect } from "react";
 import gsap from "gsap";
 import PersoCase from "./components/PersoCase/PersoCase";
+import NavBarMobile from "./components/NavBar/NavBarMobile";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -58,6 +59,7 @@ function App() {
       <div>
         <div className="background" />
         <div className="App" onLoad={handleLoad}>
+          <NavBarMobile />
           <NavBar />
           <PersoCase />
           <AllCards />

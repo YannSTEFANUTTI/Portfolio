@@ -6,7 +6,7 @@ const AllCards = () => {
     <div className="allCardsPage">
       <div className="allCardsPres">
         <h1>Mes projets</h1>
-        <h2>Développeur React Node JS</h2>
+        <h2>Mes expériences en ligne</h2>
         <p className="allCardsTxt">
           Voici quelques unes de mes réalisations. Vous pouvez retrouver le code
           de ces projets sur chaque carte. Un lien vers le site ou une vidéo de

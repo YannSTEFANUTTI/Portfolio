@@ -143,7 +143,7 @@ body {
 
 #projetID {
   font-size: 0.6vw;
-  color: rgb(128, 3, 3);
+  color: #3b5e91;
   margin: 0;
   margin-top: 0.5vw;
   font-family: gothicb, "Roboto", "sans-serif";
@@ -298,9 +298,10 @@ body {
 
   /*-------------- CARDS MEDIA QUERIES -------------- */
 
-  .allCardsPage{
-  margin-top: 7vw;
-  padding: 4vw;
+  .allCardsPage {
+    margin-top: 7vw;
+    padding: 4vw;
+    width: 70vw;
   }
 
   .allCardsPres {
@@ -320,7 +321,7 @@ body {
 
   .allCardsPres p {
     font-size: 4vw;
-    width: 70vw;
+    width: 60vw;
   }
   .allCards {
     align-items: center;
@@ -359,7 +360,6 @@ body {
 
   #projetID {
     font-size: 3vw;
-    color: rgb(128, 3, 3);
     margin: 0;
     margin-top: 1vw;
     text-align: left;
