@@ -18,12 +18,13 @@ const Form = () => {
     window.open("https://github.com/YannSTEFANUTTI");
   };
   const handleCurriculum = () => {
-    window.open( CV );
+    window.open(CV);
   };
 
   const hoverIn = (id) => {
     let animation = gsap.timeline();
-
+    let mm = gsap.matchMedia();
+    mm.add("(min-width:800px)", () => {
     animation.kill();
     animation = gsap
       .timeline()
@@ -50,37 +51,38 @@ const Form = () => {
         duration: 0,
         display: "none",
       });
+    });
   };
- const hoverInPhone = (id) => {
-   let animation = gsap.timeline();
+  const hoverInPhone = (id) => {
+    let animation = gsap.timeline();
 
-   animation.kill();
-   animation = gsap
-     .timeline()
-     .to(`.${id}`, {
-       display: "initial",
-       scale: "1",
-       x: "3vw",
-       opacity: "1",
-       duration: 0.5,
-       ease: "back",
-     })
-     .to(`.${id}`, {
-       x: "3vw",
-       scale: "1.2",
-       opacity: "0",
-       duration: 0.2,
-       delay: 5,
-       ease: "back",
-     })
-     .to(`.${id}`, {
-       x: "0",
-       scale: "1",
-       opacity: "0",
-       duration: 0,
-       display: "none",
-     });
- };
+    animation.kill();
+    animation = gsap
+      .timeline()
+      .to(`.${id}`, {
+        display: "initial",
+        scale: "1",
+        x: "3vw",
+        opacity: "1",
+        duration: 0.5,
+        ease: "back",
+      })
+      .to(`.${id}`, {
+        x: "3vw",
+        scale: "1.2",
+        opacity: "0",
+        duration: 0.2,
+        delay: 5,
+        ease: "back",
+      })
+      .to(`.${id}`, {
+        x: "0",
+        scale: "1",
+        opacity: "0",
+        duration: 0,
+        display: "none",
+      });
+  };
   return (
     <div className="formPage">
       <div className="formAll">
