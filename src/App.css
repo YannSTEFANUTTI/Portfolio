@@ -269,15 +269,14 @@ body {
     z-index: 0;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    background-image: none;
     animation: none;
-    background-color: #CADBF2;
+    background-color: #cadbf2;
+    background-image: url(./assets/img/5026563_mobile.png);
   }
 
-.background {
-  background-image: url(./assets/img/5026563_mobile.png);
-  opacity: 1; 
-}
+  .background {
+    display: none;
+  }
 
   .App {
     align-items: center;
@@ -325,7 +324,7 @@ body {
     flex-direction: column;
     gap: 18vh;
     margin-top: -5vh;
-    transform: translate(-5vw,0);
+    transform: translate(-5vw, 0);
   }
 
   #fullCard {
