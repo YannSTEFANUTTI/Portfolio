@@ -269,7 +269,10 @@ body {
     z-index: 0;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    background-image: none;
+    background-color: #aeceff;
     background-size: 500vw 500vh;
+    animation: none;
   }
 
   @keyframes AnimateBG {
