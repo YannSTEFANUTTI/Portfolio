@@ -295,6 +295,10 @@ body {
 
   /*-------------- CARDS MEDIA QUERIES -------------- */
 
+  .allCardsPage{
+  margin-top: 7vw;
+  }
+
   .allCardsPres {
     display: flex;
     flex-direction: column;
@@ -302,14 +306,18 @@ body {
   }
 
   .allCardsPres h1 {
-    font-size: 4vw;
+    font-size: 6vw;
     margin: 0;
   }
 
   .allCardsPres h2 {
-    font-size: 2.5vw;
+    font-size: 4.5vw;
   }
 
+  .allCardsPres p {
+    font-size: 4vw;
+    width: 70vw;
+  }
   .allCards {
     align-items: center;
     justify-content: flex-start;
@@ -318,7 +326,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 18vh;
-    margin-top: 10vh;
+    margin-top: -80vw;
   }
 
   #fullCard {
