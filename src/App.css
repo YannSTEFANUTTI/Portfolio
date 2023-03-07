@@ -270,22 +270,13 @@ body {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     background-image: none;
-    background-color: #aeceff;
-    background-size: 500vw 500vh;
     animation: none;
   }
 
-  @keyframes AnimateBG {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 90% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+.background {
+  background-image: url(./assets/img/5026563_mobile.png);
+  opacity: 1; 
+}
 
   .App {
     align-items: center;
