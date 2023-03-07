@@ -94,7 +94,7 @@ const Form = () => {
             method="POST"
             data-netlify="true"
             onSubmit="submit"
-            action="../success"
+            action="/success/"
           >
             <img src={mail} alt="mail" />
             <p>
