@@ -93,7 +93,6 @@ const Form = () => {
             name="contact"
             method="POST"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
             onSubmit="submit"
             action="../../pages/success"
           >
