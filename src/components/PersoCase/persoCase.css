@@ -84,6 +84,8 @@
   display: initial;
 }
 
+/* --------------RESPONSIVE------------- */
+
 @media screen and (max-width: 800px) {
 #pictureMobile {
   display: initial;
@@ -98,12 +100,16 @@
   margin: auto;
 }
 
+.pictureAndSide {
+  flex-direction: column;
+}
+
 .persoCase h1 {
-  font-size: 4vw;
+  font-size: 7vw;
 }
 
 .persoCase h2 {
-  font-size: 3vw;
+  font-size: 5vw;
 }
 
 .picturePerso {
@@ -111,8 +117,8 @@
 }
 
 #persoTxt {
-  font-size: 2.5vw;
-  width: 40vw;
+  font-size: 4vw;
+  width: 70vw;
   padding: 2vw;
 }
 
