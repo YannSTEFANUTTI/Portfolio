@@ -4,7 +4,7 @@ import github from "../../assets/img/_github.png";
 import linkedin from "../../assets/img/_linkedin.png";
 import phone from "../../assets/img/_phone.png";
 import CV from "../../assets/img/YannStefanutti.pdf";
-import curriculum from "../../assets/img/_CV.png";
+import curriculum from "../../assets/img/_cv.png";
 import "./form.css";
 
 const Form = () => {
