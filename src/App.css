@@ -272,6 +272,8 @@ body {
     animation: none;
     background-color: #cadbf2;
     background-image: url(./assets/img/5026563_mobile.png);
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .background {
