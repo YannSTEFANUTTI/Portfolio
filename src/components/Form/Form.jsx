@@ -18,7 +18,7 @@ const Form = () => {
     window.open("https://github.com/YannSTEFANUTTI");
   };
   const handleCurriculum = () => {
-    window.open(CV);
+    window.open( CV );
   };
 
   const hoverIn = (id) => {
@@ -51,36 +51,36 @@ const Form = () => {
         display: "none",
       });
   };
-  const hoverInPhone = (id) => {
-    let animation = gsap.timeline();
+ const hoverInPhone = (id) => {
+   let animation = gsap.timeline();
 
-    animation.kill();
-    animation = gsap
-      .timeline()
-      .to(`.${id}`, {
-        display: "initial",
-        scale: "1",
-        x: "3vw",
-        opacity: "1",
-        duration: 0.5,
-        ease: "back",
-      })
-      .to(`.${id}`, {
-        x: "3vw",
-        scale: "1.2",
-        opacity: "0",
-        duration: 0.2,
-        delay: 5,
-        ease: "back",
-      })
-      .to(`.${id}`, {
-        x: "0",
-        scale: "1",
-        opacity: "0",
-        duration: 0,
-        display: "none",
-      });
-  };
+   animation.kill();
+   animation = gsap
+     .timeline()
+     .to(`.${id}`, {
+       display: "initial",
+       scale: "1",
+       x: "3vw",
+       opacity: "1",
+       duration: 0.5,
+       ease: "back",
+     })
+     .to(`.${id}`, {
+       x: "3vw",
+       scale: "1.2",
+       opacity: "0",
+       duration: 0.2,
+       delay: 5,
+       ease: "back",
+     })
+     .to(`.${id}`, {
+       x: "0",
+       scale: "1",
+       opacity: "0",
+       duration: 0,
+       display: "none",
+     });
+ };
   return (
     <div className="formPage">
       <div className="formAll">
@@ -90,10 +90,11 @@ const Form = () => {
         <div className="containForm">
           <form
             className="formular"
-            name="contact"
             action="/pages/success"
+            name="contact"
             method="POST"
             data-netlify="true"
+            onSubmit="submit"
           >
             <img src={mail} alt="mail" />
             <p>
