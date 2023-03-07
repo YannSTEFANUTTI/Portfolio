@@ -90,11 +90,11 @@ const Form = () => {
         <div className="containForm">
           <form
             className="formular"
+            action="../../pages/success.js"
             name="contact"
             method="POST"
             data-netlify="true"
             onSubmit="submit"
-            action="../../pages/success.js"
           >
             <img src={mail} alt="mail" />
             <p>
