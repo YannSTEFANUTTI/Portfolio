@@ -92,4 +92,42 @@
 #pictureDesktop {
   display: none;
 }
+
+.persoCase {
+  padding: 2vw;
+  margin: auto;
+}
+
+.persoCase h1 {
+  font-size: 4vw;
+}
+
+.persoCase h2 {
+  font-size: 3vw;
+}
+
+.picturePerso {
+  height: 40vw;
+}
+
+#persoTxt {
+  font-size: 2.5vw;
+  width: 40vw;
+  padding: 2vw;
+}
+
+.allPictos p {
+  margin-top: 0vh;
+  font-size: 2vw;
+  color: #3b5e91;
+  font-weight: 700;
+}
+
+.eachPicto {
+  width: 7vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 1vw;
+}
+
 }

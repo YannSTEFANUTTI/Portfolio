@@ -75,6 +75,11 @@
   opacity: 0;
 }
 
+.curriculumTxt {
+  font-size: 0.9vw;
+  width: 7vw !important;
+}
+
 .formular input {
   width: 12vw;
   border-radius: 1vw;

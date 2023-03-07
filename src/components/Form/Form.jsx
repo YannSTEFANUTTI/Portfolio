@@ -133,7 +133,7 @@ const Form = () => {
                 onClick={handleCurriculum}
                 onMouseEnter={() => hoverIn("curriculumTxt")}
               />
-              <h3 className="curriculumTxt">curriculum</h3>
+              <h3 className="curriculumTxt">curriculum vitae</h3>
             </div>
             <div className="linkedin">
               <img

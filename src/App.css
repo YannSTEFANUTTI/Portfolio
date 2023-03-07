@@ -269,8 +269,20 @@ body {
     z-index: 0;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    background-size: 500vw 500vh;
   }
 
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 90% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   .App {
     align-items: center;
@@ -281,11 +293,22 @@ body {
     justify-content: center;
   }
 
-  .dontTouch {
-    display: none;
+  /*-------------- CARDS MEDIA QUERIES -------------- */
+
+  .allCardsPres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  /*-------------- CARDS MEDIA QUERIES -------------- */
+  .allCardsPres h1 {
+    font-size: 4vw;
+    margin: 0;
+  }
+
+  .allCardsPres h2 {
+    font-size: 2.5vw;
+  }
 
   .allCards {
     align-items: center;
@@ -359,32 +382,5 @@ body {
     scale: 1;
     width: 5vw;
     padding-bottom: 2vh;
-  }
-
-  /*-------------- TITLE BAR MEDIA QUERIES -------------- */
-
-  .titleBar {
-    opacity: 1;
-    width: 70vw;
-    height: 15vh;
-    box-shadow: none;
-    margin: 0;
-    margin-bottom: 2vh;
-    background-size: cover;
-    border-bottom-left-radius: 3vw;
-    border-bottom-right-radius: 3vw;
-  }
-  .titleBar h1 {
-    font-size: 100%;
-  }
-
-  .titleBar p {
-    font-size: 90%;
-  }
-  .titleBar img {
-    width: 3vw;
-    margin-top: 1vh;
-    filter: sepia(20%);
-    margin-bottom: 1vh;
   }
 }

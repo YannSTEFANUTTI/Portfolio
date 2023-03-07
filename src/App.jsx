@@ -29,7 +29,7 @@ function App() {
     const TL = gsap.timeline();
     let mm = gsap.matchMedia();
 
-    mm.add("(min-width:801px) and (max-width: 1999px)", () => {
+    mm.add("(min-width:800px)", () => {
       const TL = gsap.timeline();
       TL.to("#fullCard", {
         opacity: 1,

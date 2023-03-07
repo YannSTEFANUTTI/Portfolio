@@ -11,7 +11,6 @@ gsap.registerPlugin(Draggable);
 
 const NavBar = () => {
   const navRef = useRef(null);
-  let animation = gsap.timeline();
 
   const handleClick = () => {
     const { x, y, width, height } = navRef.current.getBoundingClientRect();
@@ -23,34 +22,36 @@ const NavBar = () => {
   };
 
   const hoverIn = (id) => {
+    let mm = gsap.matchMedia();
     let animation = gsap.timeline();
-
     animation.kill();
-    animation = gsap
-      .timeline()
-      .to(`.${id}`, {
-        display: "block",
-        scale: "1",
-        x: "2vw",
-        opacity: "1",
-        duration: 0.5,
-        ease: "back",
-      })
-      .to(`.${id}`, {
-        x: "2vw",
-        scale: "1.2",
-        opacity: "0",
-        duration: 0.2,
-        delay: 0.5,
-        ease: "back",
-      })
-      .to(`.${id}`, {
-        x: "0",
-        scale: "1",
-        opacity: "0",
-        duration: 0,
-        display: "none",
-      });
+    mm.add("(min-width:800px)", () => {
+      animation = gsap
+        .timeline()
+        .to(`.${id}`, {
+          display: "block",
+          scale: "1",
+          x: "2vw",
+          opacity: "1",
+          duration: 0.5,
+          ease: "back",
+        })
+        .to(`.${id}`, {
+          x: "2vw",
+          scale: "1.2",
+          opacity: "0",
+          duration: 0.2,
+          delay: 0.5,
+          ease: "back",
+        })
+        .to(`.${id}`, {
+          x: "0",
+          scale: "1",
+          opacity: "0",
+          duration: 0,
+          display: "none",
+        });
+    });
   };
 
   useEffect(() => {
@@ -82,7 +83,7 @@ const NavBar = () => {
     gsap.to(window, {
       duration: 2,
       scrollTo: homePage,
-      ease: "power4.out"
+      ease: "power4.out",
     });
   };
 
@@ -90,7 +91,7 @@ const NavBar = () => {
     gsap.to(window, {
       duration: 2,
       scrollTo: projetPage,
-      ease: "power4.out"
+      ease: "power4.out",
     });
   };
 
