@@ -95,7 +95,7 @@ const Form = () => {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit="submit"
-            action="/pages/success"
+            action="../../pages/success"
           >
             <img src={mail} alt="mail" />
             <p>
