@@ -90,7 +90,7 @@ const Form = () => {
         <div className="containForm">
           <form
             className="formular"
-            action="../../pages/success.js"
+            action="/pages/success"
             name="contact"
             method="POST"
             data-netlify="true"
