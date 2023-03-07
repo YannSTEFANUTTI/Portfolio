@@ -1,6 +1,6 @@
 import React from 'react'
 
-function success() {
+const success=()=> {
   return (
     <div>
       <p>Thank you for your submission!</p>
