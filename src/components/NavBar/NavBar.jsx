@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
-import "./navBar.css";
+import "../NavBar/navBar.css";
 import contact from "../../assets/img/contact.png";
 import home from "../../assets/img/home.png";
 import projet from "../../assets/img/projet.png";
