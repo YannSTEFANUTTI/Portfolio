@@ -2,31 +2,17 @@ import TheWeeknd from "../assets/videos/TheWeeknd.mp4";
 import WorldWildHeroes from "../assets/videos/WorldWildHeroes.mp4";
 import derniereHeure from "../assets/videos/derniereHeure.mp4";
 import WindaStreet from "../assets/videos/WindaStreet.mp4";
-import Ian from "../assets/videos/Ian.mp4";
 import Goop from "../assets/videos/goop.mp4";
 import Chaban from "../assets/videos/Chaban.mp4";
 
 const data = [
-/*   {
-    id: 5,
-    title: "DEVELOPPEUR WEB FULL STACK",
-    date: "06.65.73.03.65",
-    txt: `Fort de dix années dans l'Audiovisuel durant lesquelles j'ai régulièrement
-collaboré sur des projets web, j'ai l'ambition de poursuivre ma carrière
-en tant que développeur. Mon esprit d'équipe et ma rigueur constituent des atouts majeurs pour
-mener à bien ma mission au sein d'une entreprise innovante. Si vous cherchez un travailleur expérimenté, professionnel et passionné, n'hésitez pas à me contacter.`,
-    gitHub: "https://github.com/YannSTEFANUTTI",
-    web: "https://www.linkedin.com/in/ystefanutti/",
-    video: Ian,
-  }, */
   {
     id: 6,
     title: "Street Art ludique",
     date: "02/23",
     txt: `FULL STACK ! Découvrez toutes les oeuvres de Street-art de façon ludique à Bordeaux.
     Le troisième et dernier volet avec la Wild Code School a fait l'unanimité : Une base de données solide, un design original (retro-gaming), un jeu enrichissant, des amis à inviter et surpasser, une application complète ! Une équipe toujours très Agil (scrum), Node JS, mysql, Express, React JS, Gsap... La démo est en ligne juste en dessous.`,
-    gitHub:
-      "https://github.com/WildCodeSchool/2022-09-JS-Bordeaux-project-3-street-art",
+    gitHub: "https://github.com/YannSTEFANUTTI/WinDaStreet",
     web: "https://youtu.be/Fxnu3otAR0Q",
     video: WindaStreet,
   },
