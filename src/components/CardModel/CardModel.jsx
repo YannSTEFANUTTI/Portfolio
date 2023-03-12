@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
   let mm = gsap.matchMedia();
-  const TL = gsap.timeline();
+  let TL = gsap.timeline();
 
   //-----------------   SCROLLTRIGGER ON MOBILE   -------------------//
   mm.add("(max-width: 800px)", () => {
@@ -70,7 +70,7 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
   };
   const handleZoomOut = () => {
     let mm = gsap.matchMedia();
-    const TL = gsap.timeline();
+    let TL = gsap.timeline();
     mm.add("(min-width:800px) and (max-width: 1999px)", () => {
       TL.kill();
       TL = gsap
