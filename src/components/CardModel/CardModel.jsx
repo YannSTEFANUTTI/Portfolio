@@ -28,8 +28,7 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
 
   //-----------------   DESKTOP ZOOM   -------------------//
   const handleZoomIn = () => {
-    mm.add("(max-width: 1200px)", () => {});
-    mm.add("(min-width:800px) and (max-width: 1999px)", () => {
+    mm.add("(min-width:800px)", () => {
       TL.kill();
       TL = gsap
         .fromTo(
@@ -71,7 +70,7 @@ const CardModel = ({ id, title, date, web, gitHub, video, txt }) => {
   const handleZoomOut = () => {
     let mm = gsap.matchMedia();
     let TL = gsap.timeline();
-    mm.add("(min-width:800px) and (max-width: 1999px)", () => {
+    mm.add("(min-width:800px)", () => {
       TL.kill();
       TL = gsap
         .to(`.EachCard${id}`, {
